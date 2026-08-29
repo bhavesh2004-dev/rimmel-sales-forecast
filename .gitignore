@@ -1,24 +1,20 @@
-# Python Virtual Environment
-venv/
-ENV/
-env/
-
-# Python Bytecode & Cache
+# Python bytecode and caches
 __pycache__/
 *.py[cod]
 *$py.class
-.pytest_cache/
+*.pyc
 
-# Large Data & Database Files
-*.db
-*.sqlite
-*.sqlite3
+# Virtual environments
+venv/
+env/
+.venv/
 
-# IDE & OS Junk
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
+# Streamlit config
+.streamlit/
 
-# User Scratch Scripts (Optional)
+# Excel temporary lock files
+~$*.xlsx
+
+# Artifacts and logs
+*.log
 scratch/

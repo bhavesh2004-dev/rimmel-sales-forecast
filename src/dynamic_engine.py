@@ -1,0 +1,120 @@
+"""
+DYNAMIC FORECASTING ENGINE (FACADE ORCHESTRATOR)
+================================================
+Unified pipeline orchestrator combining preprocessing, feature engineering,
+baseline, momentum, adaptive blending, confidence, risk, and explainability.
+
+Supports arbitrary future date ranges and protected internal holdout validation.
+"""
+import pandas as pd
+from src.preprocessing import preprocess_sales_data
+from src.feature_engineering import calculate_category_momentum, extract_sku_features
+from src.baseline_forecast import compute_baseline_forecast
+from src.momentum_forecast import compute_momentum_forecast
+from src.adaptive_forecast import compute_adaptive_forecast
+from src.confidence import classify_confidence
+from src.risk import classify_risk_and_status
+from src.inventory_insights import compute_inventory_metrics
+from src.explanations import generate_forecast_explanation
+
+def run_dynamic_forecast(sales_dataframe, 
+                         train_start='2025-08-01', 
+                         train_end='2026-07-20', 
+                         forecast_start=None,
+                         forecast_end=None,
+                         forecast_days=11):
+    """
+    Orchestrates the end-to-end forecasting pipeline for all 588 SKUs.
+    
+    Args:
+        sales_dataframe (pd.DataFrame): Master historical daily sales dataset.
+        train_start (str or pd.Timestamp): Earliest date for model training.
+        train_end (str or pd.Timestamp): Cutoff date for model training (zero data leakage).
+        forecast_start (str or pd.Timestamp, optional): Start date of forecast window.
+        forecast_end (str or pd.Timestamp, optional): End date of forecast window.
+        forecast_days (int, optional): Number of forward forecast days if explicit dates are omitted.
+        
+    Returns:
+        pd.DataFrame: Clean catalog forecast dataframe with all business and inventory fields.
+    """
+    train_end_ts = pd.to_datetime(train_end)
+    
+    # Calculate forecast horizon and formatted date label
+    if forecast_start is not None and forecast_end is not None:
+        f_start_ts = pd.to_datetime(forecast_start)
+        f_end_ts   = pd.to_datetime(forecast_end)
+        horizon_days = max(int((f_end_ts - f_start_ts).days) + 1, 1)
+        date_label = f"{f_start_ts.strftime('%d/%m/%Y')} to {f_end_ts.strftime('%d/%m/%Y')}"
+    else:
+        horizon_days = max(int(forecast_days), 1)
+        f_start_ts = train_end_ts + pd.Timedelta(days=1)
+        f_end_ts   = train_end_ts + pd.Timedelta(days=horizon_days)
+        date_label = f"{f_start_ts.strftime('%d/%m/%Y')} to {f_end_ts.strftime('%d/%m/%Y')}"
+        
+    # 1. Preprocess & Isolate Training Slice
+    training_slice = preprocess_sales_data(sales_dataframe, start_date=train_start, end_date=train_end)
+    
+    # 2. Extract Category Momentum Signals
+    category_momentum_map = calculate_category_momentum(training_slice)
+    
+    all_skus = sorted(sales_dataframe['sku'].unique().tolist())
+    forecast_records = []
+    
+    for sku in all_skus:
+        # 3. Extract Grounded SKU Features
+        features = extract_sku_features(training_slice, sku, category_momentum_map)
+        
+        # 4. Generate Baseline Forecast
+        baseline_units = compute_baseline_forecast(features, forecast_horizon_days=horizon_days)
+        
+        # 5. Generate Momentum Forecast
+        momentum_units = compute_momentum_forecast(features, forecast_horizon_days=horizon_days)
+        
+        # 6. Generate Adaptive Blend
+        recommended_units, momentum_weight = compute_adaptive_forecast(
+            features, baseline_units, momentum_units, forecast_horizon_days=horizon_days
+        )
+        
+        # 7. Classify Confidence
+        confidence_level = classify_confidence(features, baseline_units, momentum_units)
+        
+        # 8. Classify Risk & Status
+        risk_status = classify_risk_and_status(
+            features, baseline_units, momentum_units, recommended_units, confidence_level
+        )
+        
+        # 9. Compute Inventory Insights & Days of Inventory
+        inventory_metrics = compute_inventory_metrics(
+            features, recommended_units, forecast_horizon_days=horizon_days, risk_status=risk_status
+        )
+        
+        # 10. Generate Plain-English Business Reason
+        explanation = generate_forecast_explanation(
+            features, baseline_units, momentum_units, recommended_units, confidence_level, risk_status
+        )
+        
+        forecast_records.append({
+            'Date': date_label,
+            'Product SKU': sku,
+            'Category': features['category'],
+            'Baseline Prediction': baseline_units,
+            'Momentum Prediction': momentum_units,
+            'Recommended Forecast': recommended_units,
+            'Confidence': confidence_level,
+            'Risk / Status': risk_status,
+            'Reason': explanation,
+            'Current Stock (Units)': features['current_stock'],
+            'Selling Price ($)': features['selling_price'],
+            'Recommended Daily Demand': inventory_metrics['recommended_daily_demand'],
+            'Estimated Days of Inventory': inventory_metrics['days_of_inventory_str'],
+            'Days of Inventory (Numeric)': inventory_metrics['days_of_inventory_numeric'],
+            'Inventory Health Status': inventory_metrics['inventory_health_status'],
+            'Inventory Action Recommendation': inventory_metrics['inventory_action_recommendation'],
+            'Annual Sales (Units)': int(features['annual_sales']),
+            'Weekly CV': round(features['weekly_cv'], 2),
+            'Zero Days Pct': round(features['zero_days_pct'], 1),
+            'Momentum Weight': momentum_weight
+        })
+        
+    df_output = pd.DataFrame(forecast_records).sort_values('Recommended Forecast', ascending=False).reset_index(drop=True)
+    return df_output
