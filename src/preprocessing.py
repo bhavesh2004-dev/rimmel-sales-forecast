@@ -5,10 +5,12 @@ Handles temporal window slicing, date validation, and in-stock flag verification
 with strict zero-leakage enforcement.
 """
 import pandas as pd
+from config.settings import DEFAULT_PROD_TRAIN_START, DEFAULT_PROD_CUTOFF
 
-def preprocess_sales_data(sales_dataframe, start_date='2025-08-01', end_date='2026-07-20'):
+def preprocess_sales_data(sales_dataframe, start_date=DEFAULT_PROD_TRAIN_START, end_date=DEFAULT_PROD_CUTOFF):
     """
-    Slices the historical dataframe to the exact training window and ensures data cleanliness.
+    Slices the historical dataframe to the specified training window and ensures data cleanliness.
+    Defaults to the full production training history (Aug 1, 2025 to Jul 31, 2026).
     
     Args:
         sales_dataframe (pd.DataFrame): Full historical sales dataframe.
@@ -21,7 +23,7 @@ def preprocess_sales_data(sales_dataframe, start_date='2025-08-01', end_date='20
     df_copy = sales_dataframe.copy()
     df_copy['date'] = pd.to_datetime(df_copy['date'])
     
-    start_ts = max(pd.to_datetime(start_date), pd.to_datetime('2025-08-01'))
+    start_ts = pd.to_datetime(start_date)
     end_ts   = pd.to_datetime(end_date)
     
     # Strictly isolate data up to the cutoff date

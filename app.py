@@ -32,7 +32,7 @@ from config.settings import (
 )
 from src.data_loader import load_sales_data
 from src.dynamic_engine import run_dynamic_forecast
-from src.validation import evaluate_holdout_performance
+from src.validation import run_holdout_benchmark, evaluate_holdout_performance
 from src.report_generator import generate_client_excel_report
 
 st.set_page_config(
@@ -277,8 +277,6 @@ if app_mode == "🚀 Mode 1: Dynamic Production Forecast":
     def get_dynamic_prod_forecast(start_d, end_d):
         return run_dynamic_forecast(
             df_master_sales,
-            train_start=DEFAULT_PROD_TRAIN_START,
-            train_end=DEFAULT_PROD_CUTOFF,
             forecast_start=start_d,
             forecast_end=end_d
         )
@@ -470,22 +468,10 @@ else:
     </div>
     """, unsafe_allow_html=True)
     
-    # Run Holdout Simulation
+    # Run Holdout Simulation (Isolated in src/validation.py)
     @st.cache_data(ttl=60)
     def run_holdout_evaluation():
-        df_holdout_pred = run_dynamic_forecast(
-            df_master_sales,
-            train_start=HOLDOUT_TRAIN_START,
-            train_end=HOLDOUT_TRAIN_END,
-            forecast_days=HOLDOUT_DAYS
-        )
-        df_eval_slice = df_master_sales[
-            (df_master_sales['date'] >= pd.to_datetime(HOLDOUT_EVAL_START)) &
-            (df_master_sales['date'] <= pd.to_datetime(HOLDOUT_EVAL_END))
-        ]
-        actuals_dict = df_eval_slice.groupby('sku')['total_sales'].sum().to_dict()
-        df_eval_out, metrics = evaluate_holdout_performance(df_holdout_pred, actuals_dict)
-        return df_eval_out, metrics
+        return run_holdout_benchmark(df_master_sales)
         
     df_holdout_evaluated, holdout_metrics = run_holdout_evaluation()
     

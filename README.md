@@ -4,6 +4,20 @@ A modular, explainable, and production-grade machine learning system designed to
 
 ---
 
+## 📚 Complete Project Documentation (`documentation/`)
+
+All technical design documents, algorithmic deep dives, version evolutions, mathematical formulations, and audit logs are archived under the [`documentation/`](file:///c:/Users/bhave/Desktop/ml_project/documentation) folder:
+
+* 🧠 **[Internal Algorithmic Architecture & Pipeline Working Guide](file:///c:/Users/bhave/Desktop/ml_project/documentation/04_INTERNAL_ALGORITHMIC_ARCHITECTURE_AND_PIPELINE_GUIDE.md):**  
+  *Comprehensive internal deep-dive explaining every algorithm from v1.0 (LightGBM/XGBoost, Croston SBA) to v8.1 (Multi-Scale Adaptive Engine), mathematical formulas, step-by-step SKU traces, and executive client explanation FAQ.*
+* 📖 **[Master Technical Documentation & Version History](file:///c:/Users/bhave/Desktop/ml_project/documentation/MASTER_PROJECT_DOCUMENTATION_AND_VERSION_HISTORY.md):**  
+  *Complete end-to-end reference covering Phase 1 through Phase 8.1, data schemas, feature engineering, adaptive blending rules, confidence matrices, inventory analytics, and operational verification.*
+* 📑 **[Forecasting Rebuild & Benchmark Audit](file:///c:/Users/bhave/Desktop/ml_project/documentation/01_PROJECT_FORECASTING_REBUILD_DOCUMENTATION.md)**
+* 📑 **[Project Summary & Approach](file:///c:/Users/bhave/Desktop/ml_project/documentation/02_PROJECT_SUMMARY_AND_APPROACH.md)**
+* 📑 **[System Audit & Living Documentation](file:///c:/Users/bhave/Desktop/ml_project/documentation/03_SYSTEM_AUDIT_AND_LIVING_DOCUMENTATION.md)**
+
+---
+
 ## 🏗️ 1. Project Architecture & Directory Structure
 
 ```text
@@ -35,11 +49,13 @@ ml_project/
 │   ├── __init__.py
 │   └── test_pipeline.py           # Automated unit/integration test suite
 │
+├── documentation/                 # Comprehensive documentation repository
 ├── reports/                       # Clean official Excel deliverables
 ├── archive/                       # Safely preserved legacy scripts & experiments
 ├── data/                          # Master clean SQLite database (rimmel_clean.db) & raw files
 ├── requirements.txt               # Locked dependencies
-└── README.md                      # Documentation & operational guide
+├── .gitignore                     # Repository hygiene rules
+└── README.md                      # Operational overview
 ```
 
 ---
@@ -121,7 +137,7 @@ streamlit run app.py
 
 ### 3. Run Automated Tests
 ```bash
-python -m unittest tests/test_pipeline.py
+python -m unittest discover -s tests
 ```
 
 ---

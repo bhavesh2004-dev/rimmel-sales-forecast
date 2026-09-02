@@ -18,3 +18,7 @@ env/
 # Artifacts and logs
 *.log
 scratch/
+*.mp4
+
+# Reports output directory (Local analysis only)
+reports/

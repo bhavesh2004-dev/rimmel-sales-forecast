@@ -1,11 +1,45 @@
 """
-VALIDATION & EVALUATION MODULE
+VALIDATION & BENCHMARK MODULE
 ==============================
-Evaluates forecasting performance on protected holdout slices.
+Dedicated module for protected historical holdout benchmarking (July 21-31, 2026).
+Isolates the historical testing gate so it never pollutes the production pipeline.
 Computes WAPE, MAE, head-to-head model comparison, and confidence calibration.
 """
 import pandas as pd
 import numpy as np
+from config.settings import HOLDOUT_TRAIN_START, HOLDOUT_TRAIN_END, HOLDOUT_EVAL_START, HOLDOUT_EVAL_END, HOLDOUT_DAYS
+from src.dynamic_engine import run_dynamic_forecast
+
+def run_holdout_benchmark(sales_dataframe):
+    """
+    Executes the isolated July 21-31, 2026 holdout validation benchmark.
+    Trained strictly on Aug 1, 2025 to Jul 20, 2026, and evaluated against
+    ground-truth actuals from Jul 21, 2026 to Jul 31, 2026 (zero leakage).
+    
+    Args:
+        sales_dataframe (pd.DataFrame): Master historical sales dataframe.
+        
+    Returns:
+        tuple: (evaluated_df: pd.DataFrame, summary_metrics: dict)
+    """
+    # 1. Run forecast with explicit holdout training boundaries
+    df_holdout_pred = run_dynamic_forecast(
+        sales_dataframe,
+        train_start=HOLDOUT_TRAIN_START,
+        train_end=HOLDOUT_TRAIN_END,
+        forecast_days=HOLDOUT_DAYS
+    )
+    
+    # 2. Extract ground-truth holdout slice
+    df_eval_slice = sales_dataframe[
+        (sales_dataframe['date'] >= pd.to_datetime(HOLDOUT_EVAL_START)) &
+        (sales_dataframe['date'] <= pd.to_datetime(HOLDOUT_EVAL_END))
+    ]
+    ground_truth_map = df_eval_slice.groupby('sku')['total_sales'].sum().to_dict()
+    
+    # 3. Evaluate accuracy metrics
+    df_evaluated, metrics = evaluate_holdout_performance(df_holdout_pred, ground_truth_map)
+    return df_evaluated, metrics
 
 def evaluate_holdout_performance(forecast_dataframe, ground_truth_sales_map):
     """

@@ -4,9 +4,11 @@ DYNAMIC FORECASTING ENGINE (FACADE ORCHESTRATOR)
 Unified pipeline orchestrator combining preprocessing, feature engineering,
 baseline, momentum, adaptive blending, confidence, risk, and explainability.
 
-Supports arbitrary future date ranges and protected internal holdout validation.
+Powers the main client production pipeline using 100% of available training data
+(Aug 1, 2025 to Jul 31, 2026), with zero hardcoded holdout omissions.
 """
 import pandas as pd
+from config.settings import DEFAULT_PROD_TRAIN_START, DEFAULT_PROD_CUTOFF, DEFAULT_FORECAST_HORIZON_DAYS
 from src.preprocessing import preprocess_sales_data
 from src.feature_engineering import calculate_category_momentum, extract_sku_features
 from src.baseline_forecast import compute_baseline_forecast
@@ -18,13 +20,14 @@ from src.inventory_insights import compute_inventory_metrics
 from src.explanations import generate_forecast_explanation
 
 def run_dynamic_forecast(sales_dataframe, 
-                         train_start='2025-08-01', 
-                         train_end='2026-07-20', 
+                         train_start=DEFAULT_PROD_TRAIN_START, 
+                         train_end=DEFAULT_PROD_CUTOFF, 
                          forecast_start=None,
                          forecast_end=None,
-                         forecast_days=11):
+                         forecast_days=DEFAULT_FORECAST_HORIZON_DAYS):
     """
-    Orchestrates the end-to-end forecasting pipeline for all 588 SKUs.
+    Orchestrates the end-to-end production forecasting pipeline for all 588 SKUs.
+    Defaults to full historical training data through July 31, 2026.
     
     Args:
         sales_dataframe (pd.DataFrame): Master historical daily sales dataset.
@@ -51,7 +54,7 @@ def run_dynamic_forecast(sales_dataframe,
         f_end_ts   = train_end_ts + pd.Timedelta(days=horizon_days)
         date_label = f"{f_start_ts.strftime('%d/%m/%Y')} to {f_end_ts.strftime('%d/%m/%Y')}"
         
-    # 1. Preprocess & Isolate Training Slice
+    # 1. Preprocess & Isolate Training Slice (Full Data)
     training_slice = preprocess_sales_data(sales_dataframe, start_date=train_start, end_date=train_end)
     
     # 2. Extract Category Momentum Signals
@@ -88,33 +91,31 @@ def run_dynamic_forecast(sales_dataframe,
             features, recommended_units, forecast_horizon_days=horizon_days, risk_status=risk_status
         )
         
-        # 10. Generate Plain-English Business Reason
+        # 10. Generate Data-Grounded Explanation
         explanation = generate_forecast_explanation(
             features, baseline_units, momentum_units, recommended_units, confidence_level, risk_status
         )
         
-        forecast_records.append({
+        # Format clean production record
+        record = {
             'Date': date_label,
             'Product SKU': sku,
             'Category': features['category'],
+            'Current Stock': features['current_stock'],
+            'Actual Sales': None,  # Left blank for client actual entry
             'Baseline Prediction': baseline_units,
             'Momentum Prediction': momentum_units,
             'Recommended Forecast': recommended_units,
             'Confidence': confidence_level,
             'Risk / Status': risk_status,
             'Reason': explanation,
-            'Current Stock (Units)': features['current_stock'],
-            'Selling Price ($)': features['selling_price'],
-            'Recommended Daily Demand': inventory_metrics['recommended_daily_demand'],
             'Estimated Days of Inventory': inventory_metrics['days_of_inventory_str'],
-            'Days of Inventory (Numeric)': inventory_metrics['days_of_inventory_numeric'],
             'Inventory Health Status': inventory_metrics['inventory_health_status'],
-            'Inventory Action Recommendation': inventory_metrics['inventory_action_recommendation'],
-            'Annual Sales (Units)': int(features['annual_sales']),
-            'Weekly CV': round(features['weekly_cv'], 2),
-            'Zero Days Pct': round(features['zero_days_pct'], 1),
-            'Momentum Weight': momentum_weight
-        })
+            'Recommended Daily Demand': inventory_metrics['recommended_daily_demand'],
+            'Momentum Weight': momentum_weight,
+            'Forecast Horizon Days': horizon_days
+        }
+        forecast_records.append(record)
         
-    df_output = pd.DataFrame(forecast_records).sort_values('Recommended Forecast', ascending=False).reset_index(drop=True)
+    df_output = pd.DataFrame(forecast_records)
     return df_output
