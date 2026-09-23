@@ -3,22 +3,46 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.pyc
+.pytest_cache/
 
 # Virtual environments
 venv/
 env/
 .venv/
 
-# Streamlit config
+# Streamlit config & cache
 .streamlit/
 
 # Excel temporary lock files
 ~$*.xlsx
 
-# Artifacts and logs
+# Artifacts, logs & developer scratchpads
 *.log
+*.tmp
 scratch/
+scratch_prompt.txt
 *.mp4
 
-# Reports output directory (Local analysis only)
-reports/
+# IDE & Editor folders
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Reports output directory: ignore ad-hoc files but preserve official deliverables
+reports/*
+!reports/Rimmel_Validation_Sep01_Sep10_2026.xlsx
+!reports/Rimmel_Forward_Forecast_Sep11_Sep20_2026.xlsx
+!reports/validation_report_sep_01_to_10_2026.xlsx
+!reports/production_forecast_sep_11_to_20_2026.xlsx
+!reports/*.csv
+!reports/*.md
+
+# Large processed Excel files (>50MB each, rebuildable via pipeline)
+data/processed/*.xlsx
+
+# SQLite databases (>100MB, rebuildable via python -m src.build_sqlite_database)
+data/rimmel_clean.db
+*.db
+*.sqlite
+

@@ -1,0 +1,675 @@
+SKU,Product,Validation Period,Amazon Actual,Amazon Predicted,eBay Actual,eBay Predicted,Website Actual,Website Predicted,Other Actual,Other Predicted,Total Actual,Total Predicted,Variance,Confidence,Risk,Reason
+RIM-100WP-BLK,Mascara,"Sep 1–10, 2026",0,4,25,22,0,0,0,0,25,26,1,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-1KLL-071,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-1KLL-080,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-1KLL-081,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BBCREAM-LIGHT,BB & CC Cream,"Sep 1–10, 2026",0,2,6,8,0,1,0,0,6,11,5,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-BBCREAM-MEDIUM,BB & CC Cream,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-BBCREAM-VERYLIGHT,BB & CC Cream,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-BTW-BSK-DRKBRW,Brow Kit,"Sep 1–10, 2026",26,23,13,9,0,0,0,0,39,32,-7,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTW-BSK-DRKBRW-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTW-BSK-DRKBRW-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTW-BSK-MEDBRW,Brow Kit,"Sep 1–10, 2026",0,0,15,13,0,0,0,0,15,13,-2,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-BTW-BSK-MEDBRW-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTW-BSK-MEDBRW-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTW-F&S-001,Brow Pencils,"Sep 1–10, 2026",1,0,1,1,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTW-F&S-002,Brow Pencils,"Sep 1–10, 2026",7,7,0,1,0,0,0,0,7,8,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTW-F&S-003,Brow Pencils,"Sep 1–10, 2026",43,22,0,0,0,0,0,0,43,22,-21,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTW-F&S-004,Brow Pencils,"Sep 1–10, 2026",1,0,0,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTWEYEBROW-003,Brow Pencils,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-BTWEYEBROW-005,Brow Pencils,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTWEYEBROW-005-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTWEYEBROW-005-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTWEYEBROW-005-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTWEYEBROW-006,Brow Pencils,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-BTWEYEBROW-006-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTWEYEBROW-006-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BTWFIBRE-001,Brow Pencils,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-BTWFIBRE-003,Brow Pencils,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-BUNDLE-LIP-SET-PINK-NUDES,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-BUNDLE-MSC-BLK-WP-TRIO,Mascara,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-EBP-BLKBRW,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-EBP-BLKBRW-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-EBP-BLKBRW-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,1,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-EBP-DRKBRW,Eyeliner,"Sep 1–10, 2026",147,152,19,33,0,0,0,0,166,185,19,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-EBP-DRKBRW-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-EBP-HAZEL,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-EBP-HAZEL-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-021,Eyeliner,"Sep 1–10, 2026",0,0,0,1,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-061,Eyeliner,"Sep 1–10, 2026",1,2,7,4,0,1,0,0,8,7,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-061-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-061-6PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-064,Eyeliner,"Sep 1–10, 2026",15,19,5,3,0,0,0,0,20,22,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-064-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-064-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-064-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-071,Eyeliner,"Sep 1–10, 2026",0,0,3,2,0,0,0,0,3,2,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-071-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-071-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ELP-071-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-EXAG-EYEL-001,Eyeliner,"Sep 1–10, 2026",1,4,8,9,1,0,0,0,10,13,3,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-EXAG-EYEL-001-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-EXAG-EYEL-001-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,2,1,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-EXAG-EYEL-001-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-EXAG-EYEL-003-WP,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-EXGEL-230,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-EXGEL-240,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-FDT-MATCH-101,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-FDT-MATCH-103,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-FDT-MATCH-200,Complexion,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-FDT-MATCH-203,Complexion,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-FDT-MATCH-300,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-FDT-MATCH-400,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-FDT-MATCH-501,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-FIX&PROT-PRIMER,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-GENTLE-EYE-MAKEUP-RMVR-125ML,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-GLAMEYES-LL-001,Eyeliner,"Sep 1–10, 2026",2,8,2,2,1,0,0,0,5,10,5,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-GLAMEYES-LL-001-2PK,Eyeliner,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-GLAMEYES-LL-002,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-HIGHLIGHT-001,Complexion,"Sep 1–10, 2026",0,1,0,0,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-HIGHLIGHT-002,Complexion,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-HTB-001,Concealer,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-HTB-001-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-HTB-001-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-HTB-001-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-HTB-002,Concealer,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-HTB-004,Concealer,"Sep 1–10, 2026",0,1,41,32,0,0,0,0,41,33,-8,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-HTB-004-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,1,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-HTB-004-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-HTB-004-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-HTB-103,Concealer,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-HTB-103-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-HTB-103-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-HTB-103-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-HTB-105,Concealer,"Sep 1–10, 2026",0,0,15,12,0,0,0,0,15,12,-3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-INSTACC-GREEN,Colour Corrector,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-INSTACC-LAVENDER,Colour Corrector,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-INSTAFIX-SPRAY,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-JELLY-010,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-JELLY-020,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-JELLY-040,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KATE-NUDE-LS-040,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KATE-NUDE-LS-042,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KATE-NUDE-LS-045,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KATE-NUDE-LS-045-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KATE-NUDE-LS-048,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KATE-SCULPTPAL-002,Complexion Palettes,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KATE-SCULPTPAL-002-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KATE-SCULPTPAL-002-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KATE-SCULPTPAL-002-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-BROW-DEFINER-001,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-BROW-DEFINER-002,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-BROW-DEFINER-004,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-BROW-DEFINER-005,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-BROW-DEFINER-006,Eyeliner,"Sep 1–10, 2026",0,0,0,0,1,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-CCLR-010,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KF-CCLR-020,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KF-CCLR-030,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-CCLR-040,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-EYE-DEFINER-02,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-EYE-DEFINER-03,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-EYE-DEFINER-04,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-EYE-DEFINER-05,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-EYE-DEFINER-06,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-FDT-001,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KF-FDT-103,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-FDT-150,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-FDT-210,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-FDT-410,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-MSC-BLACK,Mascara,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-MSC-BROWN,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KF-MULTISTICK-002,Blusher,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-MULTISTICK-003,Blusher,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-MULTISTICK-004,Blusher,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KF-MULTISTICK-005,Blusher,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-150,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-151,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-152,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-153,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-154,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-155,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-156,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KF-NAIL-157,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-158,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-160,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KF-NAIL-162,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-163,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-164,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-167,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KF-NAIL-168,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KF-NAIL-169,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-NAIL-170,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KF-PWDR-001,Complexion,"Sep 1–10, 2026",6,1,0,0,0,0,0,0,6,1,-5,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-PWDR-001-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-PWDR-001-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-PWDR-010,Complexion,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-PWDR-020,Complexion,"Sep 1–10, 2026",0,0,2,1,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-PWDR-030,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-PWDR-030-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-PWDR-030-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,1,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KF-PWDR-040,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KF-PWDR-050,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-KOHL-KJEL-001,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KOHL-KJEL-002,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-KOHL-KJEL-004,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-AUTOLIP-018,Lip Pencil,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LAST-AUTOLIP-018-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-AUTOLIP-018-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-AUTOLIP-018-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-AUTOLIP-024,Lip Pencil,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-AUTOLIP-045,Lip Pencil,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LAST-AUTOLIP-063,Lip Pencil,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LAST-AUTOLIP-063-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-AUTOLIP-070,Lip Pencil,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-AUTOLIP-105,Lip Pencil,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-MEGA-MATTE-LIQ-LPK-110,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-MEGA-MATTE-LIQ-LPK-210,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-MEGA-MATTE-LIQ-LPK-600,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LAST-MEGA-MATTE-LIQ-LPK-700,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-MEGA-MATTE-LIQ-LPK-709,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-MEGA-MATTE-LIQ-LPK-910,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LAST-MEGA-MATTE-LIQ-LPK-930,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTCCLR-001,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTCCLR-010,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTCCLR-020,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTCOMPACT-004,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTCOMPACT-005,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTCOMPACT-007,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTCOMPACT-008,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTCOMPACT-009,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTCOMPACT-011,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTCOMPACT-012,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTFIN-EXTMATT-LPK-160,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTFIN-EXTMATT-LPK-600,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTFIN-EXTMATT-LPK-710,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTFIN-EXTMATT-LPK-840,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTFIN-PRIMER,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTING-PROV-115,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTING-PROV-210,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTING-PROV-220,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTING-PROV-310,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTING-PROV-400,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTING-PROV-410,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTING-PROV-440,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTING-PROV-500,Lips,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTING-PROV-570,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTING-PROV-600,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTING-PROV-730,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTING-PROV-740,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-110,Lip Pencil,"Sep 1–10, 2026",0,0,3,3,0,0,0,0,3,3,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-120,Lip Pencil,"Sep 1–10, 2026",0,0,0,2,1,0,0,0,1,2,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-120-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-120-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-120-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-125,Lip Pencil,"Sep 1–10, 2026",6,5,3,3,0,0,0,0,9,8,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-195,Lip Pencil,"Sep 1–10, 2026",0,0,0,0,2,0,0,0,2,0,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-215,Lip Pencil,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-505,Lip Pencil,"Sep 1–10, 2026",0,0,2,2,0,0,0,0,2,2,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-580,Lip Pencil,"Sep 1–10, 2026",0,0,0,2,0,0,0,0,0,2,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-620,Lip Pencil,"Sep 1–10, 2026",22,14,1,3,0,0,0,0,23,17,-6,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-705,Lip Pencil,"Sep 1–10, 2026",0,0,0,2,0,0,0,0,0,2,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-705-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-705-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-705-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-725,Lip Pencil,"Sep 1–10, 2026",0,1,10,10,0,0,0,0,10,11,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-760,Lip Pencil,"Sep 1–10, 2026",1,3,3,2,1,1,0,0,5,6,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-790,Lip Pencil,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-850,Lip Pencil,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTLIP-880,Lip Pencil,"Sep 1–10, 2026",0,0,1,4,0,0,0,0,1,4,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LASTMAT-FDT-001,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTMAT-FDT-010,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTMAT-FDT-085,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTMAT-FDT-100,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTMAT-FDT-103,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTMAT-FDT-201,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTMAT-FDT-203,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTMAT-FDT-300,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTMAT-FDT-304,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTMAT-FDT-400,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LASTMAT-PRIMER,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-FDT-RG-001,Foundation,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-FDT-RG-070,Foundation,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-FDT-RG-103,Foundation,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-FDT-RG-160,Foundation,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-FDT-RG-170,Foundation,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-FDT-RG-200,Foundation,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-FDT-RG-203,Foundation,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-FDT-RG-210,Foundation,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-FDT-RG-303,Foundation,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-002,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-006,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-006-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-006-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-006-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-058,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-058-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-058-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-066,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-066-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-066-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-066-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-070,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-070-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-070-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-070-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-077,Lipstick,"Sep 1–10, 2026",9,10,38,39,0,5,0,0,47,54,7,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-LF-LS-084,Lipstick,"Sep 1–10, 2026",0,3,14,11,0,0,0,0,14,14,0,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-LF-LS-086,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-086-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-086-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-086-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-100,Lipstick,"Sep 1–10, 2026",0,0,0,2,0,0,0,0,0,2,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-101,Lipstick,"Sep 1–10, 2026",0,0,9,4,0,0,0,0,9,4,-5,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-107,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-170,Lipstick,"Sep 1–10, 2026",0,1,0,2,0,0,0,0,0,3,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-200,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-206,Lipstick,"Sep 1–10, 2026",11,11,10,13,1,0,0,0,22,24,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-206-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-206-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,2,2,0,0,0,0,2,2,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-206-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-264,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-264-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-264-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-264-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-500,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-710,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-800,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-LS-KATE-001,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-KATE-005,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-KATE-008,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-KATE-008-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-LS-KATE-008-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-MATTE-170,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-MATTE-180,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-MATTE-220,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-MATTE-230,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-MATTE-530,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-MATTE-715,Lipstick,"Sep 1–10, 2026",0,0,4,3,1,0,0,0,5,3,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-MATTE-730,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LF-SG-LS-900,Lips,"Sep 1–10, 2026",1,2,7,3,2,1,0,0,10,6,-4,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-SG-LS-901,Lips,"Sep 1–10, 2026",0,1,1,0,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-SG-LS-902,Lips,"Sep 1–10, 2026",0,0,2,1,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-SG-LS-903,Lips,"Sep 1–10, 2026",0,1,2,2,0,0,0,0,2,3,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-SG-LS-904,Lips,"Sep 1–10, 2026",0,0,7,4,0,0,0,0,7,4,-3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LF-SG-LS-905,Lips,"Sep 1–10, 2026",0,0,2,2,0,1,0,0,2,3,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-LR-CCLR-EYEILLUM-010,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-LR-CCLR-EYEILLUM-030,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MAGNIF-MONO-004,Eyeshadow,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MAGNIF-MONO-006,Eyeshadow,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MAGNIF-MONO-008,Eyeshadow,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MAGNIF-MONO-014,Eyeshadow,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MAGNIF-MONO-014-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MAGNIF-MONO-014-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MAGNIF-PAL-001,Eyeshadow Palettes,"Sep 1–10, 2026",0,2,1,1,0,0,0,0,1,3,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MAGNIF-PAL-004,Eyeshadow Palettes,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MAGNIF-PAL-005,Eyeshadow Palettes,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MAGNIF-PAL-006,Eyeshadow Palettes,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MAGNIF-PAL-008,Eyeshadow Palettes,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MAGNIF-PAL-009,Eyeshadow Palettes,"Sep 1–10, 2026",6,2,0,0,0,0,0,0,6,2,-4,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MATCH-PWDR,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MAXI-BLUSH-001,Blusher,"Sep 1–10, 2026",0,0,4,2,0,0,0,0,4,2,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MAXI-BLUSH-001-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MAXI-BLUSH-001-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MAXI-BLUSH-003,Blusher,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MAXI-BLUSH-005,Blusher,"Sep 1–10, 2026",4,4,2,1,0,0,0,0,6,5,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MAXI-BLUSH-006,Blusher,"Sep 1–10, 2026",0,0,1,2,0,0,0,0,1,2,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MBP-001,Brow Pencils,"Sep 1–10, 2026",0,0,3,3,0,0,0,0,3,3,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MBP-002,Brow Pencils,"Sep 1–10, 2026",0,0,5,8,0,0,0,0,5,8,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MBP-003,Brow Pencils,"Sep 1–10, 2026",58,72,1,1,0,0,1,0,60,73,13,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MICRO-BRW-001,Brow Pencils,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MICRO-BRW-002,Brow Pencils,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MICRO-BRW-003,Brow Pencils,"Sep 1–10, 2026",10,6,0,0,0,0,0,0,10,6,-4,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MICRO-BRW-004,Brow Pencils,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MINI-PWRPAL-001,Eyeshadow Palettes,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MINI-PWRPAL-002,Eyeshadow Palettes,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MOIST-LPK-100,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MOIST-LPK-140,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MOIST-LPK-180,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MOIST-LPK-180-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MOIST-LPK-180-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MOIST-LPK-180-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MOIST-LPK-200,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MOIST-LPK-200-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MOIST-LPK-200-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MOIST-LPK-200-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MOIST-LPK-210,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MOIST-LPK-260,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MOIST-LPK-360,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MOIST-LPK-510,Lipstick,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-ACCEL-BLK,Mascara,"Sep 1–10, 2026",18,25,10,12,3,1,0,0,31,38,7,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-MSC-ACCEL-BLK-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-ACCEL-BLK-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,3,6,0,0,0,0,3,6,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-ACCEL-BLK-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,1,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-CURL-003,Mascara,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MSC-E3DL-003,Mascara,"Sep 1–10, 2026",2,4,63,74,0,0,0,0,65,78,13,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-MSC-E3DL-003-2PK,Mascara,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-E3DL-003-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,2,2,0,0,0,0,2,2,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-E3DL-003-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-ELL-003,Mascara,"Sep 1–10, 2026",0,0,65,62,0,0,0,0,65,62,-3,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-MSC-ELL-003-2PK,Mascara,"Sep 1–10, 2026",0,0,0,1,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-ELL-003-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-ELL-003-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,3,0,0,0,0,1,3,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-ESL-101,Mascara,"Sep 1–10, 2026",2,3,69,60,0,0,1,0,72,63,-9,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-MSC-ESL-101-2PK,Mascara,"Sep 1–10, 2026",0,0,4,2,0,0,0,0,4,2,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-ESL-101-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-ESL-101-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,5,4,0,0,0,0,5,4,-1,MEDIUM,NORMAL,Demand is declining compared with the recent historical period.
+RIM-MSC-ESL-102,Mascara,"Sep 1–10, 2026",6,14,22,26,0,0,0,0,28,40,12,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-MSC-ESL-102-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-ESL-102-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,2,3,0,0,0,0,2,3,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-ESL-102-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-BLK,Mascara,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MSC-SCAND-LYCRA,Mascara,"Sep 1–10, 2026",2,2,0,0,0,0,0,0,2,2,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-RL-001,Mascara,"Sep 1–10, 2026",14,17,13,13,0,0,0,0,27,30,3,MEDIUM,NORMAL,Recent demand is increasing relative to the longer-term baseline.
+RIM-MSC-SCAND-RL-001-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-RL-001-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,2,1,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-RL-001-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-RL-002,Mascara,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-RL-003,Mascara,"Sep 1–10, 2026",1,2,2,3,0,0,0,0,3,5,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-RL-003-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-RL-003-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-RL-003-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-VOD-001,Mascara,"Sep 1–10, 2026",23,20,0,1,0,0,0,0,23,21,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-VOD-002,Mascara,"Sep 1–10, 2026",1,3,0,0,0,0,0,0,1,3,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-VOD-002-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-VOD-002-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-VOD-WP,Mascara,"Sep 1–10, 2026",4,1,0,0,0,0,0,0,4,1,-3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-WOW-001,Mascara,"Sep 1–10, 2026",23,33,0,0,0,0,0,0,23,33,10,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-SCAND-WOW-003,Mascara,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MSC-SCAND-WOW-WP,Mascara,"Sep 1–10, 2026",0,0,2,0,0,0,0,0,2,0,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-THRILLSEEKER-BLKBRWN,Mascara,"Sep 1–10, 2026",0,0,2,1,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-THRILLSEEKER-EXTBLACK,Mascara,"Sep 1–10, 2026",9,8,1,3,0,0,0,0,10,11,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-VF-X10-001,Mascara,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MSC-VOLCOL-001,Mascara,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MSC-WDF-001,Mascara,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-WDF-003,Mascara,"Sep 1–10, 2026",0,1,0,0,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-WDF-WP,Mascara,"Sep 1–10, 2026",0,1,0,0,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-WLUX-001,Mascara,"Sep 1–10, 2026",0,0,4,3,0,0,0,0,4,3,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-WLUX-002,Mascara,"Sep 1–10, 2026",0,0,0,2,1,0,0,0,1,2,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-WLUX-003,Eyes,"Sep 1–10, 2026",0,0,9,4,0,0,0,0,9,4,-5,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-WLUX-003-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-WNDR-EXT-001,Mascara,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MSC-WNDRBOND-LASH-FILLER-BLK,Eyes,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MULTI-TASK-CLR-010,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MULTI-TASK-CLR-020,Complexion,"Sep 1–10, 2026",0,0,0,0,1,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MULTI-TASK-CLR-030,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MULTI-TASK-CLR-040,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MULTI-TASK-CLR-050,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MULTI-TASK-CLR-060,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MULTI-TASK-CLR-070,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MULTI-TASK-CLR-090,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-MULTI-TASKER-BTF-30ML-002,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MULTI-TASKER-BTF-30ML-003,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-MULTI-TASKER-BTF-30ML-004,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-101,Nail Polish,"Sep 1–10, 2026",3,1,0,1,0,0,0,0,3,2,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-130,Nail Polish,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-150,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-151,Nail Polish,"Sep 1–10, 2026",0,1,0,0,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-152,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-153,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-154,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-155,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-203,Nail Polish,"Sep 1–10, 2026",2,4,3,5,0,0,0,0,5,9,4,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-210,Nail Polish,"Sep 1–10, 2026",1,2,3,4,0,0,0,0,4,6,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-230,Nail Polish,"Sep 1–10, 2026",1,1,0,2,0,0,0,0,1,3,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-235,Nail Polish,"Sep 1–10, 2026",2,2,3,2,0,0,0,0,5,4,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-262,Nail Polish,"Sep 1–10, 2026",1,4,5,4,0,0,0,0,6,8,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-270,Nail Polish,"Sep 1–10, 2026",4,4,3,5,0,0,0,1,7,10,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-271,Nail Polish,"Sep 1–10, 2026",4,3,5,3,0,0,0,0,9,6,-3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-300,Nail Polish,"Sep 1–10, 2026",0,1,3,4,0,0,0,1,3,6,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-310,Nail Polish,"Sep 1–10, 2026",0,2,1,3,0,0,0,0,1,5,4,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-312,Nail Polish,"Sep 1–10, 2026",0,1,1,1,0,0,0,0,1,2,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-313,Nail Polish,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-314,Nail Polish,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-315,Nail Polish,"Sep 1–10, 2026",1,0,1,2,0,0,0,0,2,2,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-320,Nail Polish,"Sep 1–10, 2026",0,2,2,3,0,0,0,0,2,5,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-322,Nail Polish,"Sep 1–10, 2026",1,1,1,2,0,0,0,0,2,3,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-323,Nail Polish,"Sep 1–10, 2026",1,2,1,4,0,0,0,0,2,6,4,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-324,Nail Polish,"Sep 1–10, 2026",1,1,0,0,0,1,0,0,1,2,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-335,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-336,Nail Polish,"Sep 1–10, 2026",2,1,2,2,0,0,0,0,4,3,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-340,Nail Polish,"Sep 1–10, 2026",0,0,0,2,0,0,0,0,0,2,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-345,Nail Polish,"Sep 1–10, 2026",3,4,6,6,0,0,0,0,9,10,1,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-NAIL-60S-401,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-404,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-405,Nail Polish,"Sep 1–10, 2026",0,1,0,1,0,0,0,0,0,2,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-406,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-410,Nail Polish,"Sep 1–10, 2026",0,1,1,1,0,0,0,0,1,2,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-411,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-430,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-498,Nail Polish,"Sep 1–10, 2026",1,1,2,1,0,0,0,0,3,2,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-500,Nail Polish,"Sep 1–10, 2026",2,4,1,3,0,0,0,0,3,7,4,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-510,Nail Polish,"Sep 1–10, 2026",0,1,1,2,0,0,0,0,1,3,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-558,Nail Polish,"Sep 1–10, 2026",5,4,3,3,0,0,0,0,8,7,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-560,Nail Polish,"Sep 1–10, 2026",1,2,2,2,0,0,0,0,3,4,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-561,Nail Polish,"Sep 1–10, 2026",0,1,1,0,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-703,Nail Polish,"Sep 1–10, 2026",0,2,1,2,0,0,0,0,1,4,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-705,Nail Polish,"Sep 1–10, 2026",0,0,0,0,1,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-707,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-708,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-709,Nail Polish,"Sep 1–10, 2026",0,1,0,0,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-710,Nail Polish,"Sep 1–10, 2026",1,1,1,1,0,0,0,0,2,2,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-711,Nail Polish,"Sep 1–10, 2026",3,3,1,2,0,0,0,0,4,5,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-712,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-713,Nail Polish,"Sep 1–10, 2026",0,0,0,1,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-714,Nail Polish,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-715,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-718,Nail Polish,"Sep 1–10, 2026",1,0,0,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-719,Nail Polish,"Sep 1–10, 2026",4,3,2,6,0,0,0,0,6,9,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-720,Nail Polish,"Sep 1–10, 2026",0,1,3,2,0,0,0,0,3,3,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-721,Nail Polish,"Sep 1–10, 2026",4,3,0,2,0,0,0,0,4,5,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-722,Nail Polish,"Sep 1–10, 2026",2,6,1,1,0,0,0,0,3,7,4,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-730,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-740,Nail Polish,"Sep 1–10, 2026",4,3,3,4,0,0,0,0,7,7,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-807,Nail Polish,"Sep 1–10, 2026",0,1,1,1,0,0,0,0,1,2,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-809,Nail Polish,"Sep 1–10, 2026",1,1,0,0,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-810,Nail Polish,"Sep 1–10, 2026",6,4,0,0,0,0,0,0,6,4,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-811,Nail Polish,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-812,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-820,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-828,Nail Polish,"Sep 1–10, 2026",0,0,3,3,0,0,0,0,3,3,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-831,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-833,Nail Polish,"Sep 1–10, 2026",1,1,1,0,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-834,Nail Polish,"Sep 1–10, 2026",0,0,0,1,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-853,Nail Polish,"Sep 1–10, 2026",1,2,0,1,0,0,0,0,1,3,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-878,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-900,Nail Polish,"Sep 1–10, 2026",3,3,5,6,0,0,0,0,8,9,1,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-NAIL-60S-901,Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-902,Nail Polish,"Sep 1–10, 2026",16,10,6,5,0,0,0,0,22,15,-7,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-905,Nail Polish,"Sep 1–10, 2026",2,1,3,1,0,0,0,0,5,2,-3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-BUNDLE-10PCS-V1,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-BUNDLE-10PCS-V2,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-BUNDLE-10PCS-V3,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-BUNDLE-15PCS-V1,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-BUNDLE-5PCS-V1,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-BUNDLE-5PCS-V2,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-BUNDLE-5PCS-V3,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-BUNDLE-5PCS-V4,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-BUNDLE-RED-5,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-BUNDLE-SUMMER-5,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-MIX-10PCS,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-60S-MIX-15PCS,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-60S-MIX-8PCS,Nail Polish Bundles,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-FT-TOPCOAT,Base & Top Coat,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-FT-TOPCOAT-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-GLITTER-BOMB-019,Base & Top Coat,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-NN-5IN1,Base & Top Coat,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-NN-STRONGER,Base & Top Coat,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-001,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-008,Gel Nail Polish,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-012,Gel Nail Polish,"Sep 1–10, 2026",10,12,0,1,0,0,0,0,10,13,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-014,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-020,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-021,Gel Nail Polish,"Sep 1–10, 2026",5,6,4,3,0,0,0,0,9,9,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-022,Gel Nail Polish,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-023,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-023-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-023-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-024,Gel Nail Polish,"Sep 1–10, 2026",1,1,2,1,0,0,0,0,3,2,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-025,Gel Nail Polish,"Sep 1–10, 2026",0,1,1,1,0,0,0,0,1,2,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-026,Gel Nail Polish,"Sep 1–10, 2026",2,1,0,0,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-027,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-030,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-031,Gel Nail Polish,"Sep 1–10, 2026",0,0,3,1,0,0,0,0,3,1,-2,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-032,Gel Nail Polish,"Sep 1–10, 2026",1,1,0,1,0,0,0,0,1,2,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-033,Gel Nail Polish,"Sep 1–10, 2026",0,0,7,4,0,0,0,0,7,4,-3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-035,Gel Nail Polish,"Sep 1–10, 2026",1,3,2,1,0,0,0,0,3,4,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-042,Gel Nail Polish,"Sep 1–10, 2026",0,3,4,1,0,0,0,0,4,4,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-043,Gel Nail Polish,"Sep 1–10, 2026",0,1,0,0,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-044,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-045,Gel Nail Polish,"Sep 1–10, 2026",3,2,0,0,0,0,0,0,3,2,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-052,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-054,Gel Nail Polish,"Sep 1–10, 2026",4,2,1,1,0,0,0,0,5,3,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-056,Gel Nail Polish,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-058,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-069,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-070,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-071,Gel Nail Polish,"Sep 1–10, 2026",3,2,1,1,0,0,0,0,4,3,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-083,Gel Nail Polish,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-090,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-091,Gel Nail Polish,"Sep 1–10, 2026",1,3,2,2,0,0,0,0,3,5,2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-091A,Gel Nail Polish,"Sep 1–10, 2026",8,6,2,1,0,0,0,0,10,7,-3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-094,Gel Nail Polish,"Sep 1–10, 2026",1,0,0,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-095,Gel Nail Polish,"Sep 1–10, 2026",1,0,0,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-096,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-097,Gel Nail Polish,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NAIL-SUPERGEL-098,Gel Nail Polish,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NAIL-SUPERGEL-099,Gel Nail Polish,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NATURALBRONZER-001,Bronzer,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-NATURALBRONZER-002,Bronzer,"Sep 1–10, 2026",1,0,1,0,0,0,0,0,2,0,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-NATURALBRONZER-002-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMG-LIP-130,Lip Gloss,"Sep 1–10, 2026",0,2,5,6,0,0,0,0,5,8,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMG-LIP-150,Lip Gloss,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMG-LIP-160,Lip Gloss,"Sep 1–10, 2026",0,0,3,1,0,0,0,0,3,1,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMG-LIP-200,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-OMG-LIP-210,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMG-LIP-260,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-OMG-LIP-300,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-OMG-LIP-330,Lip Gloss,"Sep 1–10, 2026",2,1,1,1,0,0,0,0,3,2,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMG-LIP-400,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-OMG-LIP-500,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMG-LIP-531,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-OMG-LIP-758,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-OMG-LIP-759,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMG-LIP-800,Lip Gloss,"Sep 1–10, 2026",0,0,0,1,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMG-LIP-801,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-OMG-LIP-LOVEBUG,Lip Gloss,"Sep 1–10, 2026",1,1,3,1,0,0,0,0,4,2,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMG-PLUMP-501,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-OMG-PLUMP-820,Lip Gloss,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-OMP-LIP-SHAPER-010,Lip Plumpers,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMP-LIP-SHAPER-030,Lip Plumpers,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMP-LIP-SHAPER-040,Lip Plumpers,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-OMP-LIP-SHAPER-050,Lip Plumpers,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-PROVOCALIP-210,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-PROVOCALIP-570,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-PROVOCALIP-710,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-PROVOCALIP-730,Cosmetics General,"Sep 1–10, 2026",0,3,0,0,0,0,0,0,0,3,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-RADBRICK-001,Bronzer,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-RADBRICK-002,Bronzer,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-RADBRICK-003,Bronzer,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SCD-EL-WP-001,Eyeliner,"Sep 1–10, 2026",7,10,10,10,0,0,0,0,17,20,3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EL-WP-001-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EL-WP-001-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EL-WP-001-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EL-WP-003,Eyeliner,"Sep 1–10, 2026",1,0,2,2,0,0,0,0,3,2,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EL-WP-005,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EL-WP-006,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SCD-EL-WP-008,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SCD-EYE-001,Eyeliner,"Sep 1–10, 2026",140,117,14,10,0,0,0,0,154,127,-27,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-SCD-EYE-001-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-001-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-001-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-002,Eyeliner,"Sep 1–10, 2026",37,38,21,11,0,0,0,0,58,49,-9,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SCD-EYE-002-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-002-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-002-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-003,Eyeliner,"Sep 1–10, 2026",0,4,27,24,0,0,0,0,27,28,1,MEDIUM,NORMAL,Recent demand is increasing relative to the longer-term baseline.
+RIM-SCD-EYE-003-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-003-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-003-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-004,Eyeliner,"Sep 1–10, 2026",2,3,6,4,0,0,0,0,8,7,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-005,Eyeliner,"Sep 1–10, 2026",0,0,2,1,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-006,Eyeliner,"Sep 1–10, 2026",0,0,19,11,0,0,0,0,19,11,-8,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-006-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,2,1,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-006-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-EYE-006-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SCD-MICRO-EL-001,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SM-PRIMER-003,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMLIQ-100,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMLIQ-110,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-200,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-220,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-500,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-600,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-700,Lips,"Sep 1–10, 2026",1,0,0,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMLIQ-706,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-707,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-708,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-709,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-720,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-723,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-725,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-820,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMLIQ-830,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMLIQ-870,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMLQFDT-502,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMPP-001,Complexion,"Sep 1–10, 2026",3,20,50,40,0,0,0,0,53,60,7,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-SMPP-001-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-001-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-001-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,1,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-002,Complexion,"Sep 1–10, 2026",2,5,13,12,0,0,0,0,15,17,2,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-SMPP-002-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-002-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-002-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-003,Complexion,"Sep 1–10, 2026",0,3,45,40,0,0,0,0,45,43,-2,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-SMPP-003-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,1,0,0,0,0,1,1,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-003-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,3,2,0,0,0,0,3,2,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-003-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,6,3,0,0,0,0,6,3,-3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-004,Complexion,"Sep 1–10, 2026",1,4,23,24,0,0,0,0,24,28,4,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-SMPP-004-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-004-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-004-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-005,Complexion,"Sep 1–10, 2026",92,94,53,59,0,0,0,0,145,153,8,HIGH,NORMAL,Stable historical demand with recent demand remaining consistent.
+RIM-SMPP-005-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,2,0,0,0,0,1,2,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-005-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,6,3,0,0,0,0,6,3,-3,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-005-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,4,3,0,0,0,0,4,3,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-006,Complexion,"Sep 1–10, 2026",0,4,12,18,0,0,0,0,12,22,10,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-006-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-006-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,1,0,0,0,0,0,1,1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-006-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-007,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-SMPP-008,Complexion,"Sep 1–10, 2026",0,0,2,1,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-009,Complexion,"Sep 1–10, 2026",0,0,4,2,0,0,0,0,4,2,-2,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SMPP-010,Complexion,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-STAY-MATTE-LIQLIP-COLOR-709,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-STAY-SATIN-LIP-200,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-STAY-SATIN-LIP-210,Lips,"Sep 1–10, 2026",0,0,0,0,1,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-STAY-SATIN-LIP-500,Lips,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SUPERGEL-GLITTER,Base & Top Coat,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SUPERGEL-TOPCOAT,Base & Top Coat,"Sep 1–10, 2026",21,32,1,0,0,0,0,0,22,32,10,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-SUPERGEL-TOPCOAT-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,1,0,0,0,0,0,1,0,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ULTIMATE-PRM-001,Eye Primers,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-ULTIMATE-PRM-001-2PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-ULTIMATE-PRM-001-3PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-ULTIMATE-PRM-001-5PK,Cosmetics General,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WNDCLOUD-LIQ-ES-001,Eyeshadow,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WNDCLOUD-LIQ-ES-002,Eyeshadow,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-WNDCLOUD-LIQ-ES-004,Eyeshadow,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WNDCLOUD-LIQ-ES-005,Eyeshadow,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WNDCLOUD-LIQ-ES-006,Eyeshadow,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-WNDCLOUD-LIQ-ES-007,Eyeshadow,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDER-SERUM,Brow Serum,"Sep 1–10, 2026",2,1,0,0,0,0,0,0,2,1,-1,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDERF-BROW-001,Brow Gels & Mascaras,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-WONDERF-BROW-002,Brow Gels & Mascaras,"Sep 1–10, 2026",4,8,0,0,0,0,0,0,4,8,4,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDERF-BROW-003,Brow Gels & Mascaras,"Sep 1–10, 2026",54,30,1,0,0,0,0,0,55,30,-25,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDERF-GEL-004,Brow Gels & Mascaras,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,STOCKOUT RISK,Inventory availability is limiting observed demand.
+RIM-WONDERINK-EL-001,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDERINK-LIQ-EL-002,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDERINK-LIQ-EL-003,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDERINK-LIQ-EL-005,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDERLAST-001,Brow Gels & Mascaras,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDERLAST-002,Brow Gels & Mascaras,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDERLAST-003,Brow Gels & Mascaras,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDERLAST-004,Brow Gels & Mascaras,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WONDERPROOF-EL-006,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WS2IN1-002,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."
+RIM-WS2IN1-003,Eyeliner,"Sep 1–10, 2026",0,0,0,0,0,0,0,0,0,0,0,LOW,HIGH VOLATILITY,"Demand has been volatile historically, reducing forecast certainty."

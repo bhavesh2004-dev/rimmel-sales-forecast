@@ -1,42 +1,77 @@
 """
 GLOBAL CONFIGURATION & SETTINGS
 ===============================
-Defines database paths, production forecast defaults, commercial tier thresholds,
-and isolated historical holdout benchmark constants.
+Rimmel Multi-Platform Demand Forecasting & Inventory Planning System
+Defines certified production parameters, database paths, temporal boundaries,
+calibration thresholds, and LightGBM model configuration.
 """
 import os
 
-# Base directory
+# ── Base Directory & Project Structure ────────────────────────────────────────
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
-# Database & File Paths
-DB_PATH = os.path.join(BASE_DIR, 'data', 'rimmel_clean.db')
-RAW_DATA_DIR = os.path.join(BASE_DIR, 'data', 'raw')
-REPORTS_DIR = os.path.join(BASE_DIR, 'reports')
+# Core Storage & Deliverable Directories
+DATA_DIR      = os.path.join(BASE_DIR, 'data')
+RAW_DATA_DIR  = os.path.join(DATA_DIR, 'raw')
+PROCESSED_DIR = os.path.join(DATA_DIR, 'processed')
+DB_PATH       = os.path.join(DATA_DIR, 'rimmel_clean.db')
+REPORTS_DIR   = os.path.join(BASE_DIR, 'reports')
+MODELS_DIR    = os.path.join(BASE_DIR, 'models')
 
-# ── Main Production Pipeline Defaults (100% Full Training History) ────────────
-DEFAULT_PROD_TRAIN_START = '2025-08-01'
-DEFAULT_PROD_CUTOFF      = '2026-07-31'  # Full available dataset up to July 31
-DEFAULT_FORECAST_HORIZON_DAYS = 11
+# ── Certified Production System (Exp6 Architecture) ───────────────────────────
+PRODUCTION_MODEL_VERSION = '1.0.0-production-certified'
+MODEL_NAME               = 'Exp6_LightGBM_Combined_Calibration'
+CATALOG_SKU_COUNT        = 674       # Total Canonical SKUs in master catalog
+PLATFORM_GROUPS          = ['Amazon', 'eBay', 'Website', 'Other']
+TOTAL_ACTIVE_SERIES      = 1413      # Active SKU-platform combinations
+
+# Temporal Boundaries (Certified Production Timeline)
+PRODUCTION_TRAIN_START   = '2025-08-01'
+PRODUCTION_TRAIN_END     = '2026-09-10'  # 406 calendar days
+DEFAULT_PROD_CUTOFF      = '2026-09-10'  # Primary operational cutoff
+
+# Retrospective Holdout Validation Window (Unseen Benchmark)
+VALIDATION_START         = '2026-09-01'
+VALIDATION_END           = '2026-09-10'
+VALIDATION_DAYS          = 10
+
+# Forward Production Planning Horizon
+FORWARD_FORECAST_START   = '2026-09-11'
+FORWARD_FORECAST_END     = '2026-09-20'
+FORECAST_HORIZON_DAYS    = 10
 MAX_FORECAST_HORIZON_DAYS = 31
 
-# ── Isolated Benchmark & Holdout Protocol (For Validation / Tests ONLY) ───────
-HOLDOUT_TRAIN_START = '2025-08-01'
-HOLDOUT_TRAIN_END   = '2026-07-20'  # Protected ceiling for holdout test
-HOLDOUT_EVAL_START  = '2026-07-21'  # Protected holdout evaluation start
-HOLDOUT_EVAL_END    = '2026-07-31'  # Protected holdout evaluation end
-HOLDOUT_DAYS        = 11
+# ── Certified Exp6 Post-Hoc Calibration Thresholds ────────────────────────────
+CALIBRATION_ALPHA = 0.10  # Zero-demand dampening (v7 == 0 -> y_hat * 0.10)
+CALIBRATION_BETA  = 0.10  # Stockout dampening (current_stock == 0 -> y_hat * 0.10)
 
-# ── Commercial Tier Thresholds (Annual Unit Volume) ───────────────────────────
-TIER_A_MIN_UNITS = 10000
-TIER_B_MIN_UNITS = 1500
-TIER_C_MIN_UNITS = 200
+# ── Certified LightGBM Regressor Hyperparameters ──────────────────────────────
+LGBM_PARAMS = {
+    'objective': 'regression',
+    'metric': 'rmse',
+    'n_estimators': 150,
+    'max_depth': 6,
+    'num_leaves': 31,
+    'learning_rate': 0.05,
+    'random_state': 42,
+    'subsample': 0.8,
+    'colsample_bytree': 0.8,
+    'n_jobs': -1,
+    'verbose': -1
+}
 
-# ── Volatility & Stability Thresholds ─────────────────────────────────────────
-CV_STABLE_MAX = 0.85
-CV_MODERATE_MAX = 1.25
-CV_VOLATILE_MIN = 1.30
-ZERO_DAYS_INTERMITTENT_PCT = 50.0
+# ── Shared Warehouse Inventory Policy ─────────────────────────────────────────
+# GOVERNANCE RULE: Physical stock is held in ONE central pool per SKU.
+# NEVER sum inventory across platforms.
+MIN_SAFE_COVER_DAYS = 14.0
+LEAN_COVER_DAYS     = 7.0
+CRITICAL_STOCKOUT_UNITS = 0
 
-# ── Master Catalog Metadata ───────────────────────────────────────────────────
-CATALOG_SKU_COUNT = 588
+# ── Backward Compatibility Aliases (Deprecated Phase 1 Constants) ─────────────
+DEFAULT_PROD_TRAIN_START = PRODUCTION_TRAIN_START
+DEFAULT_FORECAST_HORIZON_DAYS = FORECAST_HORIZON_DAYS
+HOLDOUT_TRAIN_START = PRODUCTION_TRAIN_START
+HOLDOUT_TRAIN_END   = '2026-08-31'
+HOLDOUT_EVAL_START  = VALIDATION_START
+HOLDOUT_EVAL_END    = VALIDATION_END
+HOLDOUT_DAYS        = VALIDATION_DAYS

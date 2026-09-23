@@ -1,0 +1,37 @@
+{
+  "model_version": "1.0.0-production-certified",
+  "model_type": "LightGBM Regressor + Exp6 Calibration",
+  "training_date": "2026-09-23 00:27:52",
+  "training_data_range": "2025-08-01 to 2026-09-10",
+  "forecast_data_range": "2026-09-11 to 2026-09-20",
+  "exact_hyperparameters": {
+    "objective": "regression",
+    "metric": "rmse",
+    "n_estimators": 150,
+    "max_depth": 6,
+    "num_leaves": 31,
+    "learning_rate": 0.05,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbose": -1
+  },
+  "calibration_rules": {
+    "alpha": 0.1,
+    "beta": 0.1
+  },
+  "training_rows": 573678,
+  "sku_platform_combinations": 1413,
+  "validated_benchmark_metrics": {
+    "holdout_period": "2026-09-01 to 2026-09-10",
+    "wape_pct": 90.54,
+    "bias_pct": 2.52,
+    "mae": 0.1326,
+    "rmse": 0.5847,
+    "actual_units": 2069.0,
+    "predicted_units": 2121.2
+  },
+  "artifact_integrity": {
+    "model_pkl_sha256": "821ba6acbea6f2a7cc81527810411389a64034c2f0c93a9636fab4d7f4605508",
+    "features_json_sha256": "824411ebcf4659c42ecca89cc114ff5eb636462125c8eeb84864b3d61390e63e"
+  }
+}
