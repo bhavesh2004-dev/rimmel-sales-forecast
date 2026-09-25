@@ -205,18 +205,30 @@ if os.path.exists(fwd_report_path):
             use_container_width=True
         )
 
+pdf_guide_path = os.path.join(REPORTS_DIR, 'Rimmel_Dataset_and_Model_Explanation_Guide.pdf')
+if os.path.exists(pdf_guide_path):
+    with open(pdf_guide_path, "rb") as f:
+        st.sidebar.download_button(
+            label="📄 Download Governance PDF Guide",
+            data=f,
+            file_name=os.path.basename(pdf_guide_path),
+            mime="application/pdf",
+            use_container_width=True
+        )
+
 # -----------------------------------------------------------------------------
 # MAIN APP TABS
 # -----------------------------------------------------------------------------
 st.markdown('<div class="main-header">Rimmel Multi-Platform Demand Forecasting System</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-header">Certified Production Platform for Inventory Replenishment & Multi-Channel Demand Planning</div>', unsafe_allow_html=True)
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "🔍 Tab 1: Product Inspector",
     "📋 Tab 2: Data View",
     "📊 Tab 3: Forecast Overview",
     "🧪 Tab 4: Validation",
-    "📦 Tab 5: Inventory / Planning"
+    "📦 Tab 5: Inventory / Planning",
+    "📁 Tab 6: Dataset Preview / Data Used"
 ])
 
 # =============================================================================
@@ -831,6 +843,216 @@ with tab5:
         st.caption(f"Displaying {len(inv_display):,} SKUs matching filter.")
     else:
         st.info("No inventory planning cache found.")
+
+# =============================================================================
+# TAB 6: DATASET PREVIEW & DATA USED
+# =============================================================================
+with tab6:
+    st.markdown("### 📁 Dataset Preview & Data Governance")
+    st.markdown("Complete data provenance, verified timeline horizons, and full transparency on the data used to train the certified Exp6 production model.")
+
+    # 1. Timeline & Horizon Banner (4 Cards)
+    t_col1, t_col2, t_col3, t_col4 = st.columns(4)
+    with t_col1:
+        st.markdown("""
+        <div class="kpi-card" style="border-left-color: #1F4E78;">
+            <div class="kpi-title">Data Source File</div>
+            <div class="kpi-value" style="font-size: 1.05rem; word-break: break-all;">Rimmel Brand Sales Data</div>
+            <div class="kpi-desc">1 Jan 2025 to 10 Sep 2026.xlsx</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with t_col2:
+        st.markdown("""
+        <div class="kpi-card" style="border-left-color: #107C41;">
+            <div class="kpi-title">Final Training Window</div>
+            <div class="kpi-value" style="font-size: 1.25rem;">01 Aug 2025 → 10 Sep 2026</div>
+            <div class="kpi-desc">406 Calendar Days (573,678 rows)</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with t_col3:
+        st.markdown("""
+        <div class="kpi-card" style="border-left-color: #0064D2;">
+            <div class="kpi-title">Holdout Validation Window</div>
+            <div class="kpi-value" style="font-size: 1.25rem;">01 Sep 2026 → 10 Sep 2026</div>
+            <div class="kpi-desc">10 Days Unseen Holdout (+2.52% Bias)</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with t_col4:
+        st.markdown("""
+        <div class="kpi-card" style="border-left-color: #D97706;">
+            <div class="kpi-title">Forward Forecast Horizon</div>
+            <div class="kpi-value" style="font-size: 1.25rem;">11 Sep 2026 → 20 Sep 2026</div>
+            <div class="kpi-desc">10 Forward Days (1,934 Physical Units)</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # 2. Simple KPI Cards (4 Cards)
+    k_col1, k_col2, k_col3, k_col4 = st.columns(4)
+    with k_col1:
+        st.markdown("""
+        <div class="platform-card" style="border-top: 3px solid #1F4E78;">
+            <div class="platform-title">🏷️ Canonical Catalog SKUs</div>
+            <div class="platform-value" style="color: #1F4E78;">674</div>
+            <div class="kpi-desc">Unified master product codes</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with k_col2:
+        st.markdown("""
+        <div class="platform-card" style="border-top: 3px solid #FF9900;">
+            <div class="platform-title">🌐 Commercial Platforms</div>
+            <div class="platform-value" style="color: #FF9900;">4</div>
+            <div class="kpi-desc">Amazon, eBay, Website, Other</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with k_col3:
+        st.markdown("""
+        <div class="platform-card" style="border-top: 3px solid #0064D2;">
+            <div class="platform-title">📊 Total Daily Observations</div>
+            <div class="platform-value" style="color: #0064D2;">573,678</div>
+            <div class="kpi-desc">406 days × 1,413 SKU-platform pairs</div>
+        </div>
+        """, unsafe_allow_html=True)
+    with k_col4:
+        st.markdown("""
+        <div class="platform-card" style="border-top: 3px solid #107C41;">
+            <div class="platform-title">📦 Total Actual Units Sold</div>
+            <div class="platform-value" style="color: #107C41;">164,786</div>
+            <div class="kpi-desc">100% mathematically conserved</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # 3. Two Business Explanation Callouts
+    exp_col1, exp_col2 = st.columns(2)
+
+    with exp_col1:
+        st.markdown("""
+        <div class="callout-box" style="height: 100%; min-height: 220px;">
+            <h4 style="margin-top: 0; color: #1F4E78;">📋 What does this dataset contain?</h4>
+            <p style="font-size: 0.88rem; line-height: 1.45; color: #333333;">
+                This dataset contains the verified, daily commercial sales records for the entire Rimmel cosmetics catalog across <b>4 commercial selling platforms</b>: 
+                <b>Amazon</b>, <b>eBay</b>, <b>Direct Website</b>, and <b>Other</b> (B2B and manual fulfillment orders).
+            </p>
+            <ul style="font-size: 0.85rem; line-height: 1.4; color: #444444; margin-bottom: 0;">
+                <li><b>Daily Grain:</b> Each record tracks exactly <b>Date × Platform × SKU</b>.</li>
+                <li><b>Complete Market Reality:</b> Days where a SKU had no sales are explicitly tracked as 0 units (ZERO Treatment), preventing artificial inflation of expected sales.</li>
+                <li><b>Central Shared Warehouse Stock:</b> Physical warehouse inventory is recorded as a single shared pool fulfilling all channels — stock is never summed across platforms.</li>
+                <li><b>Commercial Signals:</b> Includes active in-stock flags, stockout durations, price points, and promotional indicators.</li>
+            </ul>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with exp_col2:
+        st.markdown("""
+        <div class="callout-box" style="height: 100%; min-height: 220px; border-left-color: #107C41;">
+            <h4 style="margin-top: 0; color: #107C41;">⚙️ How was this data used?</h4>
+            <p style="font-size: 0.88rem; line-height: 1.45; color: #333333;">
+                To guarantee production reliability and executive trust, the dataset was processed through an airtight <b>Two-Stage MLOps Protocol</b>:
+            </p>
+            <ol style="font-size: 0.85rem; line-height: 1.4; color: #444444; margin-bottom: 0;">
+                <li><b>Step 1 — Unseen Validation Test (Sep 1–10, 2026):</b> The model was first trained strictly on history up to Aug 31, 2026, and tested on the unseen 10-day September holdout. It achieved an exceptional <b>+2.52% net portfolio bias</b> (2,121 predicted vs. 2,069 actual units).</li>
+                <li><b>Step 2 — Final Production Refit (Aug 1, 2025 → Sep 10, 2026):</b> Once certified, the model was <b>refitted on the complete 406-day dataset</b> through Sep 10 so it absorbs the freshest early-September velocity.</li>
+                <li><b>Step 3 — Forward Forecast (Sep 11–20, 2026):</b> The final model projects the upcoming 10-day replenishment demand using the Sep 10 feature snapshot and Exp6 calibration.</li>
+            </ol>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("---")
+
+    # 4. Download Detailed Explanation PDF Button
+    pdf_col1, pdf_col2 = st.columns([1.5, 1])
+    with pdf_col1:
+        st.markdown("#### 📄 Executive Governance & Data Lineage Documentation")
+        st.markdown("Download the official 4-page governance document explaining data sources, feature engineering, mathematical conservation, and forecasting logic.")
+    with pdf_col2:
+        pdf_report_path = os.path.join(REPORTS_DIR, 'Rimmel_Dataset_and_Model_Explanation_Guide.pdf')
+        if not os.path.exists(pdf_report_path):
+            pdf_report_path = os.path.join(BASE_DIR, 'PROJECT_COMPLETE_TECHNICAL_AND_BUSINESS_GUIDE.pdf')
+
+        if os.path.exists(pdf_report_path):
+            with open(pdf_report_path, "rb") as pdf_file:
+                st.download_button(
+                    label="📥 Download Detailed Explanation PDF",
+                    data=pdf_file,
+                    file_name=os.path.basename(pdf_report_path),
+                    mime="application/pdf",
+                    use_container_width=True
+                )
+        else:
+            st.info("PDF documentation generating...")
+
+    st.markdown("---")
+
+    # 5. Dataset Preview Table (from verified hist_daily)
+    st.markdown("#### 🔍 Interactive Dataset Preview (Verified Production Data)")
+    st.caption("Direct live preview of the 573,678 historical training observations (Aug 1, 2025 – Sep 10, 2026) verified by the Data Integrity Audit.")
+
+    if not hist_daily.empty:
+        f_p1, f_p2, f_p3, f_p4 = st.columns([1.2, 1.2, 1.2, 1])
+
+        with f_p1:
+            plat_options = ["All Platforms"] + sorted(hist_daily['platform_group'].unique().tolist())
+            sel_plat = st.selectbox("Filter by Selling Platform:", plat_options, index=0)
+
+        with f_p2:
+            sku_list = ["All SKUs"] + sorted(hist_daily['canonical_sku'].unique().tolist())
+            sel_sku = st.selectbox("Filter by Catalog SKU:", sku_list, index=0)
+
+        with f_p3:
+            activity_filter = st.radio(
+                "Filter by Sales Activity:",
+                ["All Observations (Including 0s)", "Active Sales Only (Units Sold > 0)"],
+                horizontal=True,
+                index=1
+            )
+
+        with f_p4:
+            row_limit = st.selectbox("Preview Rows:", [500, 1000, 2500, 5000, "All"], index=0)
+
+        # Apply filters
+        filtered_hist = hist_daily.copy()
+        if sel_plat != "All Platforms":
+            filtered_hist = filtered_hist[filtered_hist['platform_group'] == sel_plat]
+        if sel_sku != "All SKUs":
+            filtered_hist = filtered_hist[filtered_hist['canonical_sku'] == sel_sku]
+        if activity_filter == "Active Sales Only (Units Sold > 0)":
+            filtered_hist = filtered_hist[filtered_hist['actual_units'] > 0]
+
+        # Display columns nicely formatted
+        cols_display = [
+            'date', 'canonical_sku', 'platform_group', 'actual_units',
+            'in_stock', 'current_stock', 'category'
+        ]
+        cols_display_map = {
+            'date': 'Calendar Date',
+            'canonical_sku': 'Catalog SKU',
+            'platform_group': 'Platform Channel',
+            'actual_units': 'Physical Units Sold',
+            'in_stock': 'In-Stock Flag',
+            'current_stock': 'Central Warehouse Stock',
+            'category': 'Product Category'
+        }
+
+        tot_filtered_units = float(filtered_hist['actual_units'].sum())
+        tot_filtered_rows = len(filtered_hist)
+
+        if row_limit != "All":
+            df_to_render = filtered_hist.head(int(row_limit))
+        else:
+            df_to_render = filtered_hist
+
+        st.dataframe(
+            df_to_render[cols_display].rename(columns=cols_display_map),
+            use_container_width=True,
+            height=450
+        )
+
+        st.caption(f"Displaying **{len(df_to_render):,}** of **{tot_filtered_rows:,}** filtered rows | Filtered Units Sold: **{tot_filtered_units:,.1f}** | Total Production Dataset: **573,678 observations**, **164,786 units**, **674 SKUs**, **4 platforms**.")
+    else:
+        st.info("No historical dataset cache found.")
 
 st.markdown("---")
 st.caption("Rimmel Multi-Platform Demand Forecasting System | Production Certified Release | Sep 2026")

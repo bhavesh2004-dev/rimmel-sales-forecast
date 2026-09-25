@@ -37,6 +37,7 @@ reports/*
 !reports/production_forecast_sep_11_to_20_2026.xlsx
 !reports/*.csv
 !reports/*.md
+!reports/*.pdf
 
 # Large processed Excel files (>50MB each, rebuildable via pipeline)
 data/processed/*.xlsx
