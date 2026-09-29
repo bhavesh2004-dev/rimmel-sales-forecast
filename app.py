@@ -162,6 +162,28 @@ def load_data_caches():
 sku_master, val_daily, fwd_daily, hist_daily, val_metrics = load_data_caches()
 
 # -----------------------------------------------------------------------------
+# EARLY CACHE INTEGRITY GUARD (DASH-05)
+# -----------------------------------------------------------------------------
+missing_caches = []
+if sku_master.empty:
+    missing_caches.append("dashboard_sku_master.csv")
+if val_daily.empty:
+    missing_caches.append("dashboard_validation_sku_daily.csv")
+if fwd_daily.empty:
+    missing_caches.append("dashboard_forecast_sku_daily.csv")
+if hist_daily.empty:
+    missing_caches.append("dashboard_historical_daily.csv")
+
+if missing_caches:
+    st.error(
+        f"🚨 **Pipeline Data Not Found**: The following required data cache file(s) are missing or empty: "
+        f"`{', '.join(missing_caches)}`.\n\n"
+        f"Please run the production forecasting pipeline to generate the dashboard datasets: "
+        f"`python src/final_production_system.py`"
+    )
+    st.stop()
+
+# -----------------------------------------------------------------------------
 # SIDEBAR
 # -----------------------------------------------------------------------------
 st.sidebar.markdown("### 💄 Rimmel Forecasting")

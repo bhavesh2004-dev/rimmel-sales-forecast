@@ -58,6 +58,35 @@ def auto_fit_columns(ws, max_cols=30, max_scan_rows=500):
                 max_len = max(max_len, len(str(val)))
         ws.column_dimensions[col_letter].width = max(max_len + 3, 11)
 
+
+def prepare_production_features(df_input: pd.DataFrame, feature_cols: list = None, cat_cols: list = None) -> pd.DataFrame:
+    """Prepares and validates feature dataframe for LightGBM production inference:
+    1. Preserves exact 74-feature column order as certified in production.
+    2. Enforces categorical dtype on the 8 categorical features.
+    3. Safely casts numerical features with pd.to_numeric(col, errors='coerce'), guarding against
+       SQLite single-date partitions where columns with all-NULL values (e.g. days_from_restock)
+       default to Pandas 'object' dtype (preventing LightGBM ValueError).
+    4. Leaves all-NULL columns as numeric NaN without inventing arbitrary synthetic values.
+    5. Preserves all existing causal feature definitions and calibration logic.
+    """
+    if feature_cols is None or cat_cols is None:
+        models_dir = os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')), 'models')
+        meta_path = os.path.join(models_dir, 'production_features.json')
+        with open(meta_path, 'r', encoding='utf-8') as f:
+            meta = json.load(f)
+        feature_cols = feature_cols or meta['feature_list']
+        cat_cols = cat_cols or meta['categorical_features']
+
+    out = df_input[feature_cols].copy()
+    for col in feature_cols:
+        if col in cat_cols:
+            out[col] = out[col].astype('category')
+        else:
+            if out[col].dtype == 'object':
+                out[col] = pd.to_numeric(out[col], errors='coerce')
+    return out
+
+
 def run_production_system():
     start_time = time.time()
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -97,6 +126,9 @@ def run_production_system():
     for c in cat_cols:
         if c in feature_cols:
             df[c] = df[c].astype('category')
+    for c in feature_cols:
+        if c not in cat_cols and df[c].dtype == 'object':
+            df[c] = pd.to_numeric(df[c], errors='coerce')
 
     # Feature Group Taxonomy (Section 11)
     def assign_business_group(col):
@@ -605,6 +637,7 @@ def run_production_system():
         day_feat = sep10_df[feature_cols].copy()
         day_feat['day_of_week'] = dow
         day_feat['is_weekend'] = is_wknd
+        day_feat = prepare_production_features(day_feat, feature_cols, cat_cols)
 
         raw_p = np.clip(prod_model.predict(day_feat), 0, None)
 
