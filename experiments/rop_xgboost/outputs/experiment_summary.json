@@ -1,0 +1,43 @@
+{
+  "experiment_name": "Jev_XGBoost_ROP_Replenishment_Experiment",
+  "execution_timestamp": "2026-09-26 15:14:17",
+  "lead_time_days": 7,
+  "target_quantile": 0.95,
+  "model_a_eval": {
+    "mean_pinball_loss": 0.5151,
+    "empirical_coverage_pct": 98.7,
+    "mean_predicted_rop": 6.49
+  },
+  "model_b_eval": {
+    "mean_pinball_loss": 0.5104,
+    "empirical_coverage_pct": 98.72,
+    "mean_predicted_rop": 6.5
+  },
+  "model_a_sim": {
+    "model_name": "A. Baseline XGBoost ROP",
+    "lead_time_days": 7,
+    "total_demand_units": 16702.0,
+    "total_fulfilled_units": 16474.3,
+    "unit_service_level_pct": 98.64,
+    "stockout_rate_pct": 0.91,
+    "total_stockout_events": 51,
+    "total_pos_triggered": 651,
+    "total_units_ordered": 8296.0,
+    "average_inventory_units": 368.2,
+    "average_days_of_cover": 85.9
+  },
+  "model_b_sim": {
+    "model_name": "B. Jev-Enhanced XGBoost ROP",
+    "lead_time_days": 7,
+    "total_demand_units": 16702.0,
+    "total_fulfilled_units": 16479.3,
+    "unit_service_level_pct": 98.67,
+    "stockout_rate_pct": 0.91,
+    "total_stockout_events": 51,
+    "total_pos_triggered": 667,
+    "total_units_ordered": 9028.0,
+    "average_inventory_units": 368.2,
+    "average_days_of_cover": 85.9
+  },
+  "production_safety_status": "Exp6 production forecasting system was not modified."
+}

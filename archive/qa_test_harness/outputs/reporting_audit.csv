@@ -1,0 +1,3 @@
+report_file,sheets_count,sheets,audit_status,sku_count,db_sku_cnt,db_series_cnt,total_forecast_units
+Rimmel_Validation_Sep01_Sep10_2026.xlsx,2,SKU Validation Summary; Platform Summary,PASS,,,,
+Rimmel_Forward_Forecast_Sep11_Sep20_2026.xlsx,3,SKU Forecast Summary; Platform Summary; Inventory Actions,PASS,674.0,674.0,1413.0,1934.0

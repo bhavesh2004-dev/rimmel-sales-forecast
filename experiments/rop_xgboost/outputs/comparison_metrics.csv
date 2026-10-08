@@ -1,0 +1,11 @@
+Metric,Model A (Baseline XGBoost),Model B (Jev-Enhanced XGBoost),Delta / Relative Impact
+Model Description,Structured Tabular Signals Only,Structured + TypeSafe AI Jev Context,Jev Context Augmentation
+Feature Count,22,27,+5 Jev features
+Quantile Pinball Loss (Lower is Better),0.5151,0.5104,-0.91%
+Empirical Service Level / Coverage (%),98.70%,98.72%,+0.02% pts
+Backtest Unit Fill Rate (%),98.64%,98.67%,+0.03% pts
+Backtest Stockout Event Count,51,51,+0 events
+Stockout Days Rate (%),0.91%,0.91%,+0.00% pts
+Average On-Hand Warehouse Stock,368.2 units,368.2 units,+0.0 units
+Replenishment POs Triggered,651,667,+16 orders
+Total Units Reordered,"8,296","9,028",+732 units

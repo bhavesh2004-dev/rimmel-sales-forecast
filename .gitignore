@@ -10,8 +10,16 @@ venv/
 env/
 .venv/
 
+# Environment variables & secrets
+.env
+*.env
+.env.*
+**/.env
+**/*.env
+
 # Streamlit config & cache
-.streamlit/
+.streamlit/*
+!.streamlit/config.toml
 
 # Excel temporary lock files
 ~$*.xlsx
@@ -22,6 +30,8 @@ env/
 scratch/
 scratch_prompt.txt
 *.mp4
+**/jev_cache/
+
 
 # IDE & Editor folders
 .vscode/
@@ -46,4 +56,5 @@ data/processed/*.xlsx
 data/rimmel_clean.db
 *.db
 *.sqlite
+!data/app_multibrand.db
 

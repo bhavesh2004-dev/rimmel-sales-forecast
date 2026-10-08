@@ -1,0 +1,439 @@
+{
+  "experiment_name": "Real TypeSafe Jev + XGBoost ROP Phase 2",
+  "execution_date": "2026-09-28T14:34:46.241394",
+  "scenario": "Scenario C (Approved)",
+  "walk_forward_start": "2026-07-01",
+  "walk_forward_end": "2026-08-31",
+  "num_dates": 62,
+  "num_cases": 28,
+  "total_logical_decisions": 1736,
+  "api_accounting": {
+    "model_name": "typesafe/jev-1.13-20260917",
+    "api_calls_made": 1733,
+    "cache_hits": 3,
+    "retries_count": 0,
+    "failures_count": 0,
+    "input_tokens": 1218356,
+    "output_tokens": 140406,
+    "total_tokens": 1358762,
+    "total_estimated_cost_usd": 0.05117,
+    "average_cost_per_decision_usd": 2.9e-05,
+    "runtime_seconds": 314.7
+  },
+  "comparison_metrics": [
+    {
+      "Metric_Number": 1,
+      "Metric_Name": "Total Demand Units",
+      "Baseline_Model_A": 1665.0,
+      "Jev_Enhanced_Model_B": 1665.0,
+      "Absolute_Difference": 0.0,
+      "Percentage_Difference": "0.00% (Identical)"
+    },
+    {
+      "Metric_Number": 2,
+      "Metric_Name": "Fulfilled Demand Units",
+      "Baseline_Model_A": 1561.7,
+      "Jev_Enhanced_Model_B": 1563.7,
+      "Absolute_Difference": 2.0,
+      "Percentage_Difference": "+0.13%"
+    },
+    {
+      "Metric_Number": 3,
+      "Metric_Name": "Service Level (%)",
+      "Baseline_Model_A": 93.8,
+      "Jev_Enhanced_Model_B": 93.92,
+      "Absolute_Difference": 0.12,
+      "Percentage_Difference": "+0.12 pts"
+    },
+    {
+      "Metric_Number": 4,
+      "Metric_Name": "Stockout Rate (%)",
+      "Baseline_Model_A": 2.86,
+      "Jev_Enhanced_Model_B": 2.38,
+      "Absolute_Difference": -0.48,
+      "Percentage_Difference": "-0.48 pts"
+    },
+    {
+      "Metric_Number": 5,
+      "Metric_Name": "Stockout Events Count",
+      "Baseline_Model_A": 12,
+      "Jev_Enhanced_Model_B": 10,
+      "Absolute_Difference": -2,
+      "Percentage_Difference": "-16.67%"
+    },
+    {
+      "Metric_Number": 6,
+      "Metric_Name": "Total Units Ordered",
+      "Baseline_Model_A": 2283.0,
+      "Jev_Enhanced_Model_B": 2281.0,
+      "Absolute_Difference": -2.0,
+      "Percentage_Difference": "-0.09%"
+    },
+    {
+      "Metric_Number": 7,
+      "Metric_Name": "Purchase Order Count",
+      "Baseline_Model_A": 57,
+      "Jev_Enhanced_Model_B": 58,
+      "Absolute_Difference": 1,
+      "Percentage_Difference": "+1.75%"
+    },
+    {
+      "Metric_Number": 8,
+      "Metric_Name": "Average Inventory Units",
+      "Baseline_Model_A": 564.5,
+      "Jev_Enhanced_Model_B": 564.6,
+      "Absolute_Difference": 0.1,
+      "Percentage_Difference": "+0.02%"
+    },
+    {
+      "Metric_Number": 9,
+      "Metric_Name": "Days of Cover (DoC)",
+      "Baseline_Model_A": 81.9,
+      "Jev_Enhanced_Model_B": 82.0,
+      "Absolute_Difference": 0.1,
+      "Percentage_Difference": "+0.12%"
+    },
+    {
+      "Metric_Number": 10,
+      "Metric_Name": "Average Predicted ROP",
+      "Baseline_Model_A": 33.25,
+      "Jev_Enhanced_Model_B": 32.84,
+      "Absolute_Difference": -0.41,
+      "Percentage_Difference": "-1.23%"
+    },
+    {
+      "Metric_Number": 11,
+      "Metric_Name": "Reorder Frequency (Orders/Series/Day)",
+      "Baseline_Model_A": 0.0328,
+      "Jev_Enhanced_Model_B": 0.0334,
+      "Absolute_Difference": 0.0006,
+      "Percentage_Difference": "+1.83%"
+    },
+    {
+      "Metric_Number": 12,
+      "Metric_Name": "Quantile Pinball Loss (Lower is Better)",
+      "Baseline_Model_A": 2.7492,
+      "Jev_Enhanced_Model_B": 2.7439,
+      "Absolute_Difference": -0.0053,
+      "Percentage_Difference": "-0.19%"
+    },
+    {
+      "Metric_Number": 13,
+      "Metric_Name": "Empirical Service Coverage (%)",
+      "Baseline_Model_A": 94.99,
+      "Jev_Enhanced_Model_B": 94.93,
+      "Absolute_Difference": -0.06,
+      "Percentage_Difference": "-0.06 pts"
+    }
+  ],
+  "ablation_results": [
+    {
+      "Configuration": "A. Structured Only",
+      "Features_Count": 22,
+      "Pinball_Loss": 2.7492,
+      "Coverage_Pct": 94.99,
+      "Mean_ROP": 33.25,
+      "Service_Level_Pct": 93.8,
+      "Stockout_Rate_Pct": 2.86,
+      "Stockout_Events": 12,
+      "Avg_Inventory": 564.5,
+      "Total_Units_Ordered": 2283.0,
+      "PO_Count": 57
+    },
+    {
+      "Configuration": "B. Structured + Noul",
+      "Features_Count": 23,
+      "Pinball_Loss": 2.7417,
+      "Coverage_Pct": 95.05,
+      "Mean_ROP": 33.33,
+      "Service_Level_Pct": 93.86,
+      "Stockout_Rate_Pct": 2.62,
+      "Stockout_Events": 11,
+      "Avg_Inventory": 564.5,
+      "Total_Units_Ordered": 2263.0,
+      "PO_Count": 58
+    },
+    {
+      "Configuration": "C. Structured + Score",
+      "Features_Count": 23,
+      "Pinball_Loss": 2.757,
+      "Coverage_Pct": 94.99,
+      "Mean_ROP": 33.45,
+      "Service_Level_Pct": 93.8,
+      "Stockout_Rate_Pct": 2.86,
+      "Stockout_Events": 12,
+      "Avg_Inventory": 564.5,
+      "Total_Units_Ordered": 2227.0,
+      "PO_Count": 52
+    },
+    {
+      "Configuration": "D. Structured + Choice",
+      "Features_Count": 25,
+      "Pinball_Loss": 2.7356,
+      "Coverage_Pct": 94.82,
+      "Mean_ROP": 32.57,
+      "Service_Level_Pct": 93.8,
+      "Stockout_Rate_Pct": 2.86,
+      "Stockout_Events": 12,
+      "Avg_Inventory": 564.4,
+      "Total_Units_Ordered": 2238.0,
+      "PO_Count": 52
+    },
+    {
+      "Configuration": "E. Structured + All Jev",
+      "Features_Count": 28,
+      "Pinball_Loss": 2.7439,
+      "Coverage_Pct": 94.93,
+      "Mean_ROP": 32.84,
+      "Service_Level_Pct": 93.92,
+      "Stockout_Rate_Pct": 2.38,
+      "Stockout_Events": 10,
+      "Avg_Inventory": 564.6,
+      "Total_Units_Ordered": 2281.0,
+      "PO_Count": 58
+    }
+  ],
+  "feature_importance_ranking": [
+    {
+      "feature": "v14_vs_v30",
+      "is_jev": false,
+      "gain": 0.18565286695957184
+    },
+    {
+      "feature": "v14",
+      "is_jev": false,
+      "gain": 0.15549643337726593
+    },
+    {
+      "feature": "v7",
+      "is_jev": false,
+      "gain": 0.12352537363767624
+    },
+    {
+      "feature": "cv_30",
+      "is_jev": false,
+      "gain": 0.07550572603940964
+    },
+    {
+      "feature": "lag_14",
+      "is_jev": false,
+      "gain": 0.07329084724187851
+    },
+    {
+      "feature": "amazon_sessions_momentum",
+      "is_jev": false,
+      "gain": 0.06319427490234375
+    },
+    {
+      "feature": "v90",
+      "is_jev": false,
+      "gain": 0.062092266976833344
+    },
+    {
+      "feature": "days_since_stockout",
+      "is_jev": false,
+      "gain": 0.05457238480448723
+    },
+    {
+      "feature": "buy_box_7d",
+      "is_jev": false,
+      "gain": 0.041451480239629745
+    },
+    {
+      "feature": "v30",
+      "is_jev": false,
+      "gain": 0.02774970233440399
+    },
+    {
+      "feature": "sales_days_30",
+      "is_jev": false,
+      "gain": 0.022672126069664955
+    },
+    {
+      "feature": "jev_confidence",
+      "is_jev": true,
+      "gain": 0.020042387768626213
+    },
+    {
+      "feature": "lag_1",
+      "is_jev": false,
+      "gain": 0.019871851429343224
+    },
+    {
+      "feature": "lag_30",
+      "is_jev": false,
+      "gain": 0.012005477212369442
+    },
+    {
+      "feature": "day_of_week",
+      "is_jev": false,
+      "gain": 0.010508228093385696
+    },
+    {
+      "feature": "jev_prio_MEDIUM",
+      "is_jev": true,
+      "gain": 0.010373583994805813
+    },
+    {
+      "feature": "lag_7",
+      "is_jev": false,
+      "gain": 0.009020118974149227
+    },
+    {
+      "feature": "selling_price",
+      "is_jev": false,
+      "gain": 0.00893304031342268
+    },
+    {
+      "feature": "promo_days_30",
+      "is_jev": false,
+      "gain": 0.007908003404736519
+    },
+    {
+      "feature": "current_stock",
+      "is_jev": false,
+      "gain": 0.006967403460294008
+    },
+    {
+      "feature": "jev_urgent_replenishment_prob",
+      "is_jev": true,
+      "gain": 0.0033787586726248264
+    },
+    {
+      "feature": "month",
+      "is_jev": false,
+      "gain": 0.0033127933274954557
+    },
+    {
+      "feature": "platform_cat",
+      "is_jev": false,
+      "gain": 0.0024748160503804684
+    },
+    {
+      "feature": "in_stock_flag",
+      "is_jev": false,
+      "gain": 0.0
+    },
+    {
+      "feature": "is_weekend",
+      "is_jev": false,
+      "gain": 0.0
+    },
+    {
+      "feature": "jev_replenishment_risk_score",
+      "is_jev": true,
+      "gain": 0.0
+    },
+    {
+      "feature": "jev_prio_HIGH",
+      "is_jev": true,
+      "gain": 0.0
+    },
+    {
+      "feature": "jev_prio_LOW",
+      "is_jev": true,
+      "gain": 0.0
+    }
+  ],
+  "correlation_with_structured_signals": {
+    "jev_urgent_replenishment_prob": {
+      "jev_urgent_replenishment_prob": 1.0,
+      "jev_replenishment_risk_score": 0.9273604710593127,
+      "days_of_cover": -0.22580009436188583,
+      "current_stock": -0.30715773392260454,
+      "v7": 0.1464976134579171,
+      "v14": 0.19024184644985156,
+      "v30": 0.24199680307552243,
+      "cv_30": -0.18790795523988504,
+      "stockout_flag": 0.8116167058860608
+    },
+    "jev_replenishment_risk_score": {
+      "jev_urgent_replenishment_prob": 0.9273604710593127,
+      "jev_replenishment_risk_score": 1.0,
+      "days_of_cover": -0.2533916841089799,
+      "current_stock": -0.36277654585578323,
+      "v7": 0.001680782385751655,
+      "v14": 0.023011402570708616,
+      "v30": 0.06117405620513124,
+      "cv_30": -0.2575054704013211,
+      "stockout_flag": 0.9369369254947504
+    },
+    "days_of_cover": {
+      "jev_urgent_replenishment_prob": -0.22580009436188583,
+      "jev_replenishment_risk_score": -0.2533916841089799,
+      "days_of_cover": 1.0,
+      "current_stock": 0.40776919420054053,
+      "v7": -0.10094525836058844,
+      "v14": -0.10704993306867956,
+      "v30": -0.10900317192360462,
+      "cv_30": 0.3185769789930005,
+      "stockout_flag": -0.21714182630476386
+    },
+    "current_stock": {
+      "jev_urgent_replenishment_prob": -0.30715773392260454,
+      "jev_replenishment_risk_score": -0.36277654585578323,
+      "days_of_cover": 0.40776919420054053,
+      "current_stock": 1.0,
+      "v7": 0.2769826658275822,
+      "v14": 0.31416857189454406,
+      "v30": 0.3547111978704674,
+      "cv_30": 0.02622155183294622,
+      "stockout_flag": -0.3019543494034537
+    },
+    "v7": {
+      "jev_urgent_replenishment_prob": 0.1464976134579171,
+      "jev_replenishment_risk_score": 0.001680782385751655,
+      "days_of_cover": -0.10094525836058844,
+      "current_stock": 0.2769826658275822,
+      "v7": 1.0,
+      "v14": 0.9154592553016866,
+      "v30": 0.7743054477904031,
+      "cv_30": -0.14498729422327974,
+      "stockout_flag": -0.11106028354445917
+    },
+    "v14": {
+      "jev_urgent_replenishment_prob": 0.19024184644985156,
+      "jev_replenishment_risk_score": 0.023011402570708616,
+      "days_of_cover": -0.10704993306867956,
+      "current_stock": 0.31416857189454406,
+      "v7": 0.9154592553016866,
+      "v14": 1.0,
+      "v30": 0.8909276119427556,
+      "cv_30": -0.17130077994907533,
+      "stockout_flag": -0.07253850413110838
+    },
+    "v30": {
+      "jev_urgent_replenishment_prob": 0.24199680307552243,
+      "jev_replenishment_risk_score": 0.06117405620513124,
+      "days_of_cover": -0.10900317192360462,
+      "current_stock": 0.3547111978704674,
+      "v7": 0.7743054477904031,
+      "v14": 0.8909276119427556,
+      "v30": 1.0,
+      "cv_30": -0.1826205727330763,
+      "stockout_flag": -0.012062061786033942
+    },
+    "cv_30": {
+      "jev_urgent_replenishment_prob": -0.18790795523988504,
+      "jev_replenishment_risk_score": -0.2575054704013211,
+      "days_of_cover": 0.3185769789930005,
+      "current_stock": 0.02622155183294622,
+      "v7": -0.14498729422327974,
+      "v14": -0.17130077994907533,
+      "v30": -0.1826205727330763,
+      "cv_30": 1.0,
+      "stockout_flag": -0.3377909469528614
+    },
+    "stockout_flag": {
+      "jev_urgent_replenishment_prob": 0.8116167058860608,
+      "jev_replenishment_risk_score": 0.9369369254947504,
+      "days_of_cover": -0.21714182630476386,
+      "current_stock": -0.3019543494034537,
+      "v7": -0.11106028354445917,
+      "v14": -0.07253850413110838,
+      "v30": -0.012062061786033942,
+      "cv_30": -0.3377909469528614,
+      "stockout_flag": 1.0
+    }
+  }
+}

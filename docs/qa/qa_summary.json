@@ -1,0 +1,19 @@
+{
+  "execution_date": "2026-09-29T13:57:50.299397",
+  "total_tests": 63,
+  "summary": {
+    "PASS": 55,
+    "FAIL": 0,
+    "WARNING": 7,
+    "NOT TESTABLE": 0,
+    "INFORMATIONAL": 1
+  },
+  "severity_breakdown": {
+    "LOW": 55,
+    "MEDIUM": 7,
+    "INFORMATIONAL": 1
+  },
+  "runtime_seconds": 13.43,
+  "production_code_modified": false,
+  "production_artifacts_modified": false
+}

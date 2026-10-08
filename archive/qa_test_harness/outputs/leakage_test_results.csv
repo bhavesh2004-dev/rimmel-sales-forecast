@@ -1,0 +1,6 @@
+test_date,sku,platform,baseline_pred,simulated_future_injection_pred,prediction_delta,leakage_detected
+2026-08-31,RIM-100WP-BLK,Amazon,0.5092,0.5092,0.0,False
+2026-08-31,RIM-1KLL-071,Amazon,0.0152,0.0152,0.0,False
+2026-08-31,RIM-1KLL-080,Amazon,0.0152,0.0152,0.0,False
+2026-08-31,RIM-1KLL-081,Amazon,0.0152,0.0152,0.0,False
+2026-08-31,RIM-BBCREAM-LIGHT,Amazon,0.3761,0.3761,0.0,False

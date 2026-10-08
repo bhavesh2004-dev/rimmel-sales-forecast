@@ -14,13 +14,13 @@ A production-grade, mathematically disciplined machine learning platform designe
 
 For deep technical dives, mathematical proofs, and architectural blueprints, refer to:
 
-* 📘 **[Complete Technical & Business Knowledge Manual (34 Sections)](PROJECT_COMPLETE_TECHNICAL_AND_BUSINESS_GUIDE.md)**  
-  *(Comprehensive 129 KB manual covering business context, ZERO vs AVERAGE proof, feature dictionary, single SKU trace, and 20 client FAQs. Also available as a 57-page executive PDF: [`PROJECT_COMPLETE_TECHNICAL_AND_BUSINESS_GUIDE.pdf`](PROJECT_COMPLETE_TECHNICAL_AND_BUSINESS_GUIDE.pdf))*
-* 🏗️ **[Codebase Architecture Blueprint](CODEBASE_ARCHITECTURE.md)**  
-  *(Component inventory, database schemas, pipeline stages, and security models)*
-* 📋 **[Pre-Deployment Audit Report](AUDIT_REPORT.md)**  
-  *(Severity-classified findings matrix, remediations, and golden behavior baseline)*
-* 🚀 **[Deployment Checklist](DEPLOYMENT_CHECKLIST.md)**  
+* 📘 **[Complete Technical & Business Knowledge Manual (34 Sections)](docs/CLIENT_FORECASTING_AND_BUSINESS_GUIDE.md)**  
+  *(Comprehensive 129 KB manual covering business context, ZERO vs AVERAGE proof, feature dictionary, single SKU trace, and 20 client FAQs. Also available as an executive PDF: [`docs/CLIENT_FORECASTING_AND_BUSINESS_GUIDE.pdf`](docs/CLIENT_FORECASTING_AND_BUSINESS_GUIDE.pdf))*
+* 🏗️ **[Codebase Structure & File Audit](docs/CODEBASE_STRUCTURE_AND_FILE_AUDIT.md)**  
+  *(Comprehensive repository inventory, production dependency map, and cleanup blueprint)*
+* 📋 **[QA Audit & Correction Reports](docs/qa/)**  
+  *(Official 63-test QA audit, correction report, and demand dynamics analysis)*
+* 🚀 **[Deployment Checklist](docs/DEPLOYMENT_CHECKLIST.md)**  
   *(Pre-commit verification gates, test commands, and production sign-off)*
 
 ---
@@ -102,30 +102,24 @@ Evaluated on the strictly unseen **September 1–10, 2026** holdout validation w
 ```text
 ml_project/
 │
-├── app.py                         # Streamlit Interactive Web Application (Read-Only)
+├── app.py                         # Streamlit Interactive Web Application (Decoupled, Read-Only)
 ├── requirements.txt               # Locked Python dependencies (LightGBM, Streamlit, etc.)
 ├── .gitignore                     # Repository hygiene & client report preservation rules
 ├── README.md                      # Operational overview (this document)
-├── CODEBASE_ARCHITECTURE.md       # Full engineering architecture & component reference
-├── AUDIT_REPORT.md                # Comprehensive pre-deployment audit findings & resolutions
-├── DEPLOYMENT_CHECKLIST.md        # Pre-commit & production deployment gate checklist
-├── PROJECT_COMPLETE_...GUIDE.md   # Complete 34-section technical & business manual
-├── PROJECT_COMPLETE_...GUIDE.pdf  # Publication-grade 57-page executive PDF
 │
-├── src/                           # Production Forecasting & Normalization Package
-│   ├── __init__.py                # Package entrypoint exposing certified pipelines
-│   ├── generate_client_reports.py # Primary operational report & cache generator
-│   ├── final_production_system.py # End-to-end retraining & model certification pipeline
+├── src/                           # Production Forecasting & Normalization Package (7 Active Modules)
+│   ├── __init__.py                # Package entrypoint exposing certified pipeline
+│   ├── final_production_system.py # Certified Exp6 end-to-end retraining, forecast & report orchestrator
+│   ├── build_sqlite_database.py   # SQLite database builder (rimmel_clean.db)
 │   ├── data_ingestion.py          # Immutable raw Excel ingestion with SHA-256 lineage
+│   ├── normalization.py           # Daily observation layer & operational state tagging
 │   ├── platform_mapping.py        # Channel-to-platform normalization
 │   ├── sku_mapping.py             # Raw SKU to Canonical SKU hierarchy resolution
-│   ├── normalization.py           # Daily observation layer & operational state tagging
-│   ├── phase2_feature_engineering.py # 74-feature causal engineering engine
-│   └── build_sqlite_database.py   # SQLite database builder (rimmel_clean.db)
+│   └── phase2_feature_engineering.py # 74-feature causal engineering engine
 │
 ├── config/
 │   ├── __init__.py
-│   └── settings.py                # Central production parameters, paths, and constants
+│   └── settings.py                # Central production parameters, paths, and calibration constants
 │
 ├── models/                        # Serialized Model Artifacts
 │   ├── production_lgbm_model.pkl  # Trained LightGBM regressor (SHA-256 verified)
@@ -133,21 +127,41 @@ ml_project/
 │   └── production_model_config.json # Hyperparameters, metrics, and cryptographic hashes
 │
 ├── reports/                       # Client Excel Deliverables
-│   ├── Rimmel_Validation_Sep01_Sep10_2026.xlsx       # Primary Holdout Validation (SKU Summary)
-│   ├── Rimmel_Forward_Forecast_Sep11_Sep20_2026.xlsx # Primary Forward Forecast (SKU Summary)
+│   ├── Rimmel_Validation_Sep01_Sep10_2026.xlsx       # Primary Holdout Validation (8 Sheets)
+│   ├── Rimmel_Forward_Forecast_Sep11_Sep20_2026.xlsx # Primary Forward Forecast (4 Sheets)
 │   ├── validation_report_sep_01_to_10_2026.xlsx      # Backward-compatible copy
-│   └── production_forecast_sep_11_to_20_2026.xlsx    # Backward-compatible copy
+│   ├── production_forecast_sep_11_to_20_2026.xlsx    # Backward-compatible copy
+│   └── Rimmel_Dataset_and_Model_Explanation_Guide.pdf # Client explanation PDF guide
 │
-├── data/
+├── data/                          # Data Layer
 │   ├── rimmel_clean.db            # Master clean SQLite database (101k raw rows, 573k grid rows)
-│   ├── raw/                       # Immutable source copies
+│   ├── Rimmel Brand Sales Data - 1 Jan 2025 to 10 Sep 2026.xlsx # Immutable source data
+│   ├── raw/                       # Raw ingest folder
 │   └── processed/                 # Cached daily and SKU summaries for UI dashboard
 │
 ├── tests/                         # Automated Regression Test Suite
+│   ├── __init__.py
 │   ├── test_production_system.py  # Model params, report schemas, unit sums, db integrity
 │   └── test_feature_leakage.py    # Temporal bounds, lag matching, platform feature isolation
 │
-└── archive/                       # Safely preserved legacy scripts & early experiments
+├── docs/                          # Consolidated System Documentation
+│   ├── CLIENT_FORECASTING_AND_BUSINESS_GUIDE.md # Complete 34-section technical & business manual
+│   ├── CLIENT_FORECASTING_AND_BUSINESS_GUIDE.pdf # Publication-grade executive PDF
+│   ├── DEPLOYMENT_CHECKLIST.md                  # Pre-commit & production deployment gate checklist
+│   ├── CODEBASE_STRUCTURE_AND_FILE_AUDIT.md     # Full repository inventory & dependency audit
+│   ├── architecture/              # Internal algorithmic & pipeline architectural guides
+│   ├── qa/                        # Official QA audit compliance reports & empirical evidence
+│   └── archive/                   # Historical audit and git migration reports
+│
+├── experiments/                   # Isolated Research Experiments
+│   └── rop_xgboost/               # Reorder Point (ROP) + TypeSafe Jev incremental value research
+│
+└── archive/                       # Preserved Historical Versions & Runners
+    ├── phase_runners/             # Deprecated Phase 1–5 runners and early generators
+    ├── raw_data_versions/         # Historical raw Excel dataset versions
+    ├── qa_test_harness/           # 63-test QA test harness scripts and artifacts
+    ├── legacy_scratch/            # Historical diagnostic scratchpads
+    └── previous_versions/         # Early heuristic models & prototypes
 ```
 
 ---
@@ -190,7 +204,7 @@ Open your browser at `http://localhost:8501` to explore:
 ### Step 4: Regenerate Official Client Excel Reports
 To re-run inference and generate fresh Excel workbooks from SQLite:
 ```bash
-python -m src.generate_client_reports
+python -m src.final_production_system
 ```
 
 ---

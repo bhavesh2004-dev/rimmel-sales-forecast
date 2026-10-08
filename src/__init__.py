@@ -5,8 +5,7 @@ Package entrypoint exposing the certified production forecasting engine (Exp6),
 data normalization pipelines, and reporting utilities.
 """
 
-# Core Certified Production Engine & Reporting
-from src.generate_client_reports import main as generate_production_reports
+# Core Certified Production Engine
 from src.final_production_system import run_production_system
 
 # Core Data Pipeline Modules
