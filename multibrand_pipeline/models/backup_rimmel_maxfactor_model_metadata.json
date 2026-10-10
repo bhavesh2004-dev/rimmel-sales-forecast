@@ -1,0 +1,254 @@
+{
+  "model_name": "GlobalMultiBrandLGBM",
+  "pipeline_version": "2.0.0",
+  "serialization_format": "pickle_sklearn_LGBMRegressor",
+  "training_window": "2025-08-01 to 2026-09-10",
+  "refit_mode_enabled": true,
+  "feature_count": 60,
+  "features": [
+    "canonical_sku",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_30",
+    "lag_90",
+    "lag_180",
+    "lag_365",
+    "v7",
+    "v14",
+    "v30",
+    "v60",
+    "v90",
+    "v180",
+    "v365",
+    "sales_days_30",
+    "sales_days_90",
+    "sales_days_180",
+    "cv_30",
+    "cv_90",
+    "v30_vs_v365",
+    "v90_vs_v365",
+    "same_period_last_year_7d",
+    "same_period_last_year_30d",
+    "yoy_7d",
+    "yoy_30d",
+    "v14_vs_v30",
+    "v30_vs_v90",
+    "v30_vs_v180",
+    "current_stock",
+    "in_stock_flag",
+    "days_since_stockout",
+    "v14_instock",
+    "v30_instock",
+    "v90_instock",
+    "has_restock_date",
+    "days_from_restock",
+    "selling_price",
+    "price_vs_30d",
+    "price_vs_90d",
+    "price_change_30d",
+    "amazon_sessions_7d",
+    "amazon_sessions_30d",
+    "amazon_sessions_90d",
+    "amazon_sessions_momentum",
+    "buy_box_7d",
+    "buy_box_30d",
+    "buy_box_90d",
+    "buy_box_change",
+    "units_per_session_30d",
+    "promo_days_7",
+    "promo_days_30",
+    "promo_days_90",
+    "promotion_started",
+    "day_of_week",
+    "days_since_launch",
+    "resolved_parent_id",
+    "platform_share_30d",
+    "other_platform_sales_7d",
+    "other_platform_sales_30d"
+  ],
+  "categorical_features": [
+    "canonical_sku",
+    "resolved_parent_id"
+  ],
+  "hyperparameters": {
+    "objective": "regression",
+    "metric": "rmse",
+    "boosting_type": "gbdt",
+    "n_estimators": 150,
+    "learning_rate": 0.05,
+    "max_depth": 6,
+    "num_leaves": 31,
+    "min_child_samples": 20,
+    "min_child_weight": 0.001,
+    "min_split_gain": 0.0,
+    "colsample_bytree": 1.0,
+    "subsample": 1.0,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbose": -1
+  },
+  "brands_covered": [
+    "RIMMEL",
+    "MAX_FACTOR"
+  ],
+  "platforms_covered": [
+    "Amazon",
+    "Other",
+    "Website",
+    "eBay"
+  ],
+  "training_rows": 913906,
+  "benchmark_metrics": {
+    "benchmark_period": "2026-09-01 to 2026-09-10",
+    "total_observations": 22510,
+    "overall_raw": {
+      "total_actual": 2627.0,
+      "total_predicted": 2861.5885063235664,
+      "wape": 104.32,
+      "bias_pct": 8.93,
+      "rmse": 0.5441,
+      "mae": 0.1218
+    },
+    "overall_calib": {
+      "total_actual": 2627.0,
+      "total_predicted": 2609.199981893641,
+      "wape": 96.15,
+      "bias_pct": -0.68,
+      "rmse": 0.5451,
+      "mae": 0.1122
+    },
+    "by_brand": {
+      "RIMMEL": {
+        "raw": {
+          "total_actual": 2069.0,
+          "total_predicted": 2259.5901944341686,
+          "wape": 95.1,
+          "bias_pct": 9.21,
+          "rmse": 0.5652,
+          "mae": 0.1392
+        },
+        "calib": {
+          "total_actual": 2069.0,
+          "total_predicted": 2106.348319725159,
+          "wape": 88.91,
+          "bias_pct": 1.81,
+          "rmse": 0.5655,
+          "mae": 0.1302
+        }
+      },
+      "MAX_FACTOR": {
+        "raw": {
+          "total_actual": 558.0,
+          "total_predicted": 601.9983118893978,
+          "wape": 138.54,
+          "bias_pct": 7.89,
+          "rmse": 0.5066,
+          "mae": 0.0922
+        },
+        "calib": {
+          "total_actual": 558.0,
+          "total_predicted": 502.85166216848177,
+          "wape": 122.98,
+          "bias_pct": -9.88,
+          "rmse": 0.509,
+          "mae": 0.0819
+        }
+      }
+    },
+    "by_platform": {
+      "Amazon": {
+        "raw": {
+          "total_actual": 1154.0,
+          "total_predicted": 1317.6051712483936,
+          "wape": 97.79,
+          "bias_pct": 14.18,
+          "rmse": 0.6668,
+          "mae": 0.1621
+        },
+        "calib": {
+          "total_actual": 1154.0,
+          "total_predicted": 1224.1820606466613,
+          "wape": 91.59,
+          "bias_pct": 6.08,
+          "rmse": 0.6682,
+          "mae": 0.1519
+        }
+      },
+      "Other": {
+        "raw": {
+          "total_actual": 2.0,
+          "total_predicted": 21.12408524683956,
+          "wape": 1153.47,
+          "bias_pct": 956.2,
+          "rmse": 0.0423,
+          "mae": 0.0167
+        },
+        "calib": {
+          "total_actual": 2.0,
+          "total_predicted": 5.087143549004122,
+          "wape": 354.08,
+          "bias_pct": 154.36,
+          "rmse": 0.0407,
+          "mae": 0.0051
+        }
+      },
+      "Website": {
+        "raw": {
+          "total_actual": 79.0,
+          "total_predicted": 110.80094595073011,
+          "wape": 229.01,
+          "bias_pct": 40.25,
+          "rmse": 0.4451,
+          "mae": 0.0347
+        },
+        "calib": {
+          "total_actual": 79.0,
+          "total_predicted": 57.04819902662206,
+          "wape": 165.52,
+          "bias_pct": -27.79,
+          "rmse": 0.447,
+          "mae": 0.0251
+        }
+      },
+      "eBay": {
+        "raw": {
+          "total_actual": 1392.0,
+          "total_predicted": 1412.058303877603,
+          "wape": 101.15,
+          "bias_pct": 1.44,
+          "rmse": 0.532,
+          "mae": 0.1573
+        },
+        "calib": {
+          "total_actual": 1392.0,
+          "total_predicted": 1322.8825786713533,
+          "wape": 95.62,
+          "bias_pct": -4.97,
+          "rmse": 0.5323,
+          "mae": 0.1487
+        }
+      }
+    },
+    "diagnostics": {
+      "actual_zero_rate_pct": 95.24,
+      "pred_zero_rate_raw_pct": 79.88,
+      "pred_zero_rate_calib_pct": 81.11,
+      "false_positive_rows_raw": 370,
+      "false_positive_rows_calib": 353,
+      "active_sales_rows": 1072,
+      "active_underprediction_rows": 867,
+      "active_overprediction_rows": 205,
+      "stockout_rows": 6496,
+      "stockout_error_metrics": {
+        "total_actual": 16.0,
+        "total_predicted": 6.299439534604538,
+        "wape": 128.46,
+        "bias_pct": -60.63,
+        "rmse": 0.0989,
+        "mae": 0.0032
+      }
+    }
+  },
+  "created_at": "2026-10-06T11:17:50.950956"
+}

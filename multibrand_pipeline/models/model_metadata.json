@@ -1,0 +1,602 @@
+{
+  "model_name": "UnifiedMultiBrandLGBM_7Brands",
+  "pipeline_version": "2.1.0",
+  "serialization_format": "pickle_sklearn_LGBMRegressor",
+  "training_window": "2025-08-01 to Latest Cutoff per Brand (2026-10-06)",
+  "training_rows_total": 1271008,
+  "brands_covered": [
+    "RIMMEL",
+    "MAX_FACTOR",
+    "GEEK_GORGEOUS",
+    "KIFRA",
+    "WELEDA",
+    "DELILAH",
+    "FRANK_BODY"
+  ],
+  "brand_training_rows": {
+    "DELILAH": 6554,
+    "FRANK_BODY": 5564,
+    "GEEK_GORGEOUS": 4228,
+    "KIFRA": 2546,
+    "MAX_FACTOR": 472176,
+    "RIMMEL": 737702,
+    "WELEDA": 42238
+  },
+  "brand_training_units": {
+    "DELILAH": 126.0,
+    "FRANK_BODY": 40.0,
+    "GEEK_GORGEOUS": 1506.0,
+    "KIFRA": 1009.0,
+    "MAX_FACTOR": 36925.0,
+    "RIMMEL": 172612.0,
+    "WELEDA": 585.0
+  },
+  "feature_count": 60,
+  "features": [
+    "canonical_sku",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_30",
+    "lag_90",
+    "lag_180",
+    "lag_365",
+    "v7",
+    "v14",
+    "v30",
+    "v60",
+    "v90",
+    "v180",
+    "v365",
+    "sales_days_30",
+    "sales_days_90",
+    "sales_days_180",
+    "cv_30",
+    "cv_90",
+    "v30_vs_v365",
+    "v90_vs_v365",
+    "same_period_last_year_7d",
+    "same_period_last_year_30d",
+    "yoy_7d",
+    "yoy_30d",
+    "v14_vs_v30",
+    "v30_vs_v90",
+    "v30_vs_v180",
+    "current_stock",
+    "in_stock_flag",
+    "days_since_stockout",
+    "v14_instock",
+    "v30_instock",
+    "v90_instock",
+    "has_restock_date",
+    "days_from_restock",
+    "selling_price",
+    "price_vs_30d",
+    "price_vs_90d",
+    "price_change_30d",
+    "amazon_sessions_7d",
+    "amazon_sessions_30d",
+    "amazon_sessions_90d",
+    "amazon_sessions_momentum",
+    "buy_box_7d",
+    "buy_box_30d",
+    "buy_box_90d",
+    "buy_box_change",
+    "units_per_session_30d",
+    "promo_days_7",
+    "promo_days_30",
+    "promo_days_90",
+    "promotion_started",
+    "day_of_week",
+    "days_since_launch",
+    "resolved_parent_id",
+    "platform_share_30d",
+    "other_platform_sales_7d",
+    "other_platform_sales_30d"
+  ],
+  "categorical_features": [
+    "canonical_sku",
+    "resolved_parent_id"
+  ],
+  "hyperparameters": {
+    "objective": "regression",
+    "metric": "rmse",
+    "boosting_type": "gbdt",
+    "n_estimators": 150,
+    "learning_rate": 0.05,
+    "max_depth": 6,
+    "num_leaves": 31,
+    "min_child_samples": 20,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbose": -1
+  },
+  "calibration": {
+    "method": "Exp6",
+    "zero_demand_alpha": 0.1,
+    "stockout_beta": 0.1
+  },
+  "model_hashes": {
+    "md5": "dac42213d9c8c3a63f97e6171bf187d7",
+    "sha256": "a5d3776c0f166e3dcb77fb7ebaf8c3028060d33bf74260d74c5c66737a59b547"
+  },
+  "benchmark_metrics_sep01_10": {
+    "overall_raw": {
+      "actual": 2881.0,
+      "predicted": 3191.58,
+      "wape": 110.96,
+      "bias_pct": 10.78,
+      "mae": 0.1039,
+      "rmse": 0.5234
+    },
+    "overall_calib": {
+      "actual": 2881.0,
+      "predicted": 2897.09,
+      "wape": 101.47,
+      "bias_pct": 0.56,
+      "mae": 0.095,
+      "rmse": 0.523
+    },
+    "by_brand": {
+      "RIMMEL": {
+        "daily_raw": {
+          "actual": 2218.0,
+          "predicted": 2476.84,
+          "wape": 103.09,
+          "bias_pct": 11.67,
+          "mae": 0.1258,
+          "rmse": 0.5689
+        },
+        "daily_calib": {
+          "actual": 2218.0,
+          "predicted": 2296.57,
+          "wape": 95.66,
+          "bias_pct": 3.54,
+          "mae": 0.1168,
+          "rmse": 0.5681
+        },
+        "sku_10d_raw": {
+          "actual": 2218.0,
+          "predicted": 2476.84,
+          "wape": 34.26,
+          "bias_pct": 11.67,
+          "mae": 0.9906,
+          "rmse": 2.509
+        },
+        "sku_10d_calib": {
+          "actual": 2218.0,
+          "predicted": 2296.57,
+          "wape": 28.81,
+          "bias_pct": 3.54,
+          "mae": 0.8332,
+          "rmse": 2.3635
+        }
+      },
+      "MAX_FACTOR": {
+        "daily_raw": {
+          "actual": 558.0,
+          "predicted": 631.21,
+          "wape": 143.18,
+          "bias_pct": 13.12,
+          "mae": 0.0731,
+          "rmse": 0.4709
+        },
+        "daily_calib": {
+          "actual": 558.0,
+          "predicted": 530.3,
+          "wape": 125.69,
+          "bias_pct": -4.96,
+          "mae": 0.0642,
+          "rmse": 0.4712
+        },
+        "sku_10d_raw": {
+          "actual": 558.0,
+          "predicted": 631.21,
+          "wape": 47.98,
+          "bias_pct": 13.12,
+          "mae": 0.5637,
+          "rmse": 1.2646
+        },
+        "sku_10d_calib": {
+          "actual": 558.0,
+          "predicted": 530.3,
+          "wape": 36.46,
+          "bias_pct": -4.96,
+          "mae": 0.4283,
+          "rmse": 1.2513
+        }
+      },
+      "GEEK_GORGEOUS": {
+        "daily_raw": {
+          "actual": 71.0,
+          "predicted": 50.79,
+          "wape": 68.94,
+          "bias_pct": -28.47,
+          "mae": 0.1748,
+          "rmse": 0.5468
+        },
+        "daily_calib": {
+          "actual": 71.0,
+          "predicted": 48.6,
+          "wape": 66.22,
+          "bias_pct": -31.56,
+          "mae": 0.1679,
+          "rmse": 0.5474
+        },
+        "sku_10d_raw": {
+          "actual": 71.0,
+          "predicted": 50.79,
+          "wape": 38.02,
+          "bias_pct": -28.47,
+          "mae": 1.3497,
+          "rmse": 3.8296
+        },
+        "sku_10d_calib": {
+          "actual": 71.0,
+          "predicted": 48.6,
+          "wape": 38.3,
+          "bias_pct": -31.56,
+          "mae": 1.3597,
+          "rmse": 3.8729
+        }
+      },
+      "WELEDA": {
+        "daily_raw": {
+          "actual": 22.0,
+          "predicted": 21.8,
+          "wape": 184.94,
+          "bias_pct": -0.89,
+          "mae": 0.0415,
+          "rmse": 0.1752
+        },
+        "daily_calib": {
+          "actual": 22.0,
+          "predicted": 14.1,
+          "wape": 154.49,
+          "bias_pct": -35.91,
+          "mae": 0.0347,
+          "rmse": 0.1772
+        },
+        "sku_10d_raw": {
+          "actual": 22.0,
+          "predicted": 21.8,
+          "wape": 91.82,
+          "bias_pct": -0.89,
+          "mae": 0.3311,
+          "rmse": 0.5222
+        },
+        "sku_10d_calib": {
+          "actual": 22.0,
+          "predicted": 14.1,
+          "wape": 79.4,
+          "bias_pct": -35.91,
+          "mae": 0.2864,
+          "rmse": 0.617
+        }
+      },
+      "DELILAH": {
+        "daily_raw": {
+          "actual": 3.0,
+          "predicted": 5.34,
+          "wape": 272.21,
+          "bias_pct": 78.1,
+          "mae": 0.0282,
+          "rmse": 0.1036
+        },
+        "daily_calib": {
+          "actual": 3.0,
+          "predicted": 3.97,
+          "wape": 231.62,
+          "bias_pct": 32.21,
+          "mae": 0.024,
+          "rmse": 0.106
+        },
+        "sku_10d_raw": {
+          "actual": 3.0,
+          "predicted": 5.34,
+          "wape": 226.69,
+          "bias_pct": 78.1,
+          "mae": 0.2345,
+          "rmse": 0.3743
+        },
+        "sku_10d_calib": {
+          "actual": 3.0,
+          "predicted": 3.97,
+          "wape": 193.39,
+          "bias_pct": 32.21,
+          "mae": 0.2001,
+          "rmse": 0.3838
+        }
+      },
+      "FRANK_BODY": {
+        "daily_raw": {
+          "actual": 9.0,
+          "predicted": 5.61,
+          "wape": 151.65,
+          "bias_pct": -37.72,
+          "mae": 0.105,
+          "rmse": 0.2825
+        },
+        "daily_calib": {
+          "actual": 9.0,
+          "predicted": 3.56,
+          "wape": 135.47,
+          "bias_pct": -60.45,
+          "mae": 0.0938,
+          "rmse": 0.2893
+        },
+        "sku_10d_raw": {
+          "actual": 9.0,
+          "predicted": 5.61,
+          "wape": 91.61,
+          "bias_pct": -37.72,
+          "mae": 0.6342,
+          "rmse": 0.9993
+        },
+        "sku_10d_calib": {
+          "actual": 9.0,
+          "predicted": 3.56,
+          "wape": 80.71,
+          "bias_pct": -60.45,
+          "mae": 0.5588,
+          "rmse": 1.0183
+        }
+      }
+    }
+  },
+  "rolling_holdout_metrics": {
+    "RIMMEL": {
+      "window": "2026-09-01 to 2026-09-10",
+      "train_cutoff": "2026-08-31",
+      "daily_raw": {
+        "actual": 2218.0,
+        "predicted": 2476.84,
+        "wape": 103.09,
+        "bias_pct": 11.67,
+        "mae": 0.1258,
+        "rmse": 0.5689
+      },
+      "daily_calib": {
+        "actual": 2218.0,
+        "predicted": 2296.57,
+        "wape": 95.66,
+        "bias_pct": 3.54,
+        "mae": 0.1168,
+        "rmse": 0.5681
+      },
+      "sku_10d_raw": {
+        "actual": 2218.0,
+        "predicted": 2476.84,
+        "wape": 34.26,
+        "bias_pct": 11.67,
+        "mae": 0.9906,
+        "rmse": 2.509
+      },
+      "sku_10d_calib": {
+        "actual": 2218.0,
+        "predicted": 2296.57,
+        "wape": 28.81,
+        "bias_pct": 3.54,
+        "mae": 0.8332,
+        "rmse": 2.3635
+      }
+    },
+    "MAX_FACTOR": {
+      "window": "2026-09-27 to 2026-10-06",
+      "train_cutoff": "2026-09-26",
+      "daily_raw": {
+        "actual": 502.0,
+        "predicted": 535.27,
+        "wape": 137.99,
+        "bias_pct": 6.63,
+        "mae": 0.0634,
+        "rmse": 0.3488
+      },
+      "daily_calib": {
+        "actual": 502.0,
+        "predicted": 442.98,
+        "wape": 120.38,
+        "bias_pct": -11.76,
+        "mae": 0.0553,
+        "rmse": 0.3488
+      },
+      "sku_10d_raw": {
+        "actual": 502.0,
+        "predicted": 535.27,
+        "wape": 53.2,
+        "bias_pct": 6.63,
+        "mae": 0.5622,
+        "rmse": 1.4178
+      },
+      "sku_10d_calib": {
+        "actual": 502.0,
+        "predicted": 442.98,
+        "wape": 43.21,
+        "bias_pct": -11.76,
+        "mae": 0.4567,
+        "rmse": 1.4621
+      }
+    },
+    "GEEK_GORGEOUS": {
+      "window": "2026-09-27 to 2026-10-06",
+      "train_cutoff": "2026-09-26",
+      "daily_raw": {
+        "actual": 291.0,
+        "predicted": 242.05,
+        "wape": 63.87,
+        "bias_pct": -16.82,
+        "mae": 0.6638,
+        "rmse": 1.2945
+      },
+      "daily_calib": {
+        "actual": 291.0,
+        "predicted": 240.31,
+        "wape": 63.43,
+        "bias_pct": -17.42,
+        "mae": 0.6593,
+        "rmse": 1.2954
+      },
+      "sku_10d_raw": {
+        "actual": 291.0,
+        "predicted": 242.05,
+        "wape": 24.0,
+        "bias_pct": -16.82,
+        "mae": 3.4925,
+        "rmse": 5.8255
+      },
+      "sku_10d_calib": {
+        "actual": 291.0,
+        "predicted": 240.31,
+        "wape": 24.35,
+        "bias_pct": -17.42,
+        "mae": 3.543,
+        "rmse": 5.8455
+      }
+    },
+    "KIFRA": {
+      "window": "2026-09-27 to 2026-10-06",
+      "train_cutoff": "2026-09-26",
+      "daily_raw": {
+        "actual": 564.0,
+        "predicted": 406.81,
+        "wape": 120.57,
+        "bias_pct": -27.87,
+        "mae": 0.5075,
+        "rmse": 2.0143
+      },
+      "daily_calib": {
+        "actual": 564.0,
+        "predicted": 261.09,
+        "wape": 107.01,
+        "bias_pct": -53.71,
+        "mae": 0.4504,
+        "rmse": 2.0789
+      },
+      "sku_10d_raw": {
+        "actual": 564.0,
+        "predicted": 406.81,
+        "wape": 36.61,
+        "bias_pct": -27.87,
+        "mae": 3.0362,
+        "rmse": 6.6287
+      },
+      "sku_10d_calib": {
+        "actual": 564.0,
+        "predicted": 261.09,
+        "wape": 58.06,
+        "bias_pct": -53.71,
+        "mae": 4.8154,
+        "rmse": 12.4456
+      }
+    },
+    "WELEDA": {
+      "window": "2026-09-26 to 2026-10-05",
+      "train_cutoff": "2026-09-25",
+      "daily_raw": {
+        "actual": 14.0,
+        "predicted": 20.39,
+        "wape": 232.32,
+        "bias_pct": 45.66,
+        "mae": 0.0332,
+        "rmse": 0.1353
+      },
+      "daily_calib": {
+        "actual": 14.0,
+        "predicted": 11.28,
+        "wape": 171.64,
+        "bias_pct": -19.46,
+        "mae": 0.0245,
+        "rmse": 0.1373
+      },
+      "sku_10d_raw": {
+        "actual": 14.0,
+        "predicted": 20.39,
+        "wape": 127.44,
+        "bias_pct": 45.66,
+        "mae": 0.2925,
+        "rmse": 0.5363
+      },
+      "sku_10d_calib": {
+        "actual": 14.0,
+        "predicted": 11.28,
+        "wape": 93.27,
+        "bias_pct": -19.46,
+        "mae": 0.2141,
+        "rmse": 0.5587
+      }
+    },
+    "DELILAH": {
+      "window": "2026-09-23 to 2026-10-02",
+      "train_cutoff": "2026-09-22",
+      "daily_raw": {
+        "actual": 7.0,
+        "predicted": 4.39,
+        "wape": 156.23,
+        "bias_pct": -37.3,
+        "mae": 0.0377,
+        "rmse": 0.1741
+      },
+      "daily_calib": {
+        "actual": 7.0,
+        "predicted": 2.88,
+        "wape": 137.02,
+        "bias_pct": -58.82,
+        "mae": 0.0331,
+        "rmse": 0.1755
+      },
+      "sku_10d_raw": {
+        "actual": 7.0,
+        "predicted": 4.39,
+        "wape": 89.97,
+        "bias_pct": -37.3,
+        "mae": 0.2172,
+        "rmse": 0.3875
+      },
+      "sku_10d_calib": {
+        "actual": 7.0,
+        "predicted": 2.88,
+        "wape": 77.67,
+        "bias_pct": -58.82,
+        "mae": 0.1875,
+        "rmse": 0.4065
+      }
+    },
+    "FRANK_BODY": {
+      "window": "2026-09-23 to 2026-10-02",
+      "train_cutoff": "2026-09-22",
+      "daily_raw": {
+        "actual": 8.0,
+        "predicted": 8.02,
+        "wape": 187.18,
+        "bias_pct": 0.19,
+        "mae": 0.1152,
+        "rmse": 0.299
+      },
+      "daily_calib": {
+        "actual": 8.0,
+        "predicted": 7.32,
+        "wape": 179.31,
+        "bias_pct": -8.5,
+        "mae": 0.1103,
+        "rmse": 0.3
+      },
+      "sku_10d_raw": {
+        "actual": 8.0,
+        "predicted": 8.02,
+        "wape": 98.15,
+        "bias_pct": 0.19,
+        "mae": 0.604,
+        "rmse": 0.7644
+      },
+      "sku_10d_calib": {
+        "actual": 8.0,
+        "predicted": 7.32,
+        "wape": 100.92,
+        "bias_pct": -8.5,
+        "mae": 0.6211,
+        "rmse": 0.8216
+      }
+    }
+  },
+  "created_at": "2026-10-10T14:38:40.784167"
+}

@@ -1,0 +1,30 @@
+pipeline:
+  name: "dynamic_multibrand_demand_forecasting"
+  version: "3.0.0"
+
+paths:
+  approved_model_path: "multibrand_pipeline/models/global_lgbm_model.pkl"
+  feature_schema_path: "multibrand_pipeline/config/feature_schema.json"
+  excel_report_dir: "artifacts/reports"
+
+forecasting:
+  default_horizon_days: 10
+  min_history_days_brand_ml: 180
+  min_training_rows_brand_ml: 5000
+  min_active_days_brand_ml: 100
+  min_volume_units_brand_ml: 5000
+  min_history_days_pooled_ml: 90
+  min_history_days_short_fallback: 30
+
+calibration:
+  zero_demand_alpha: 0.10
+  stockout_beta: 0.10
+
+model_parameters:
+  n_estimators: 150
+  learning_rate: 0.05
+  max_depth: 6
+  num_leaves: 31
+  random_state: 42
+  n_jobs: -1
+  verbose: -1

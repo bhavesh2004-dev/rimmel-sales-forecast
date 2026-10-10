@@ -1,0 +1,44 @@
+{
+  "1. Stable year-round demand": {
+    "rows": 106,
+    "actual": 618.0,
+    "wape_A": 44.61,
+    "wape_B": 42.69,
+    "wape_C": 44.17
+  },
+  "2. Seasonal behavior": {
+    "rows": 9536,
+    "actual": 1493.0,
+    "wape_A": 99.16,
+    "wape_B": 98.85,
+    "wape_C": 98.87
+  },
+  "3. Long-term momentum": {
+    "rows": 1480,
+    "actual": 1033.0,
+    "wape_A": 81.06,
+    "wape_B": 79.4,
+    "wape_C": 80.51
+  },
+  "4. Recent 7d misleading": {
+    "rows": 490,
+    "actual": 785.0,
+    "wape_A": 72.25,
+    "wape_B": 70.7,
+    "wape_C": 71.28
+  },
+  "5. Intermittent spikes": {
+    "rows": 1629,
+    "actual": 438.0,
+    "wape_A": 132.31,
+    "wape_B": 133.47,
+    "wape_C": 134.28
+  },
+  "6. Recent vs historical divergent": {
+    "rows": 549,
+    "actual": 962.0,
+    "wape_A": 62.0,
+    "wape_B": 60.01,
+    "wape_C": 60.76
+  }
+}

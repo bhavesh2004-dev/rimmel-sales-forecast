@@ -278,26 +278,26 @@ button[data-baseweb="tab"][aria-selected="true"] {{
 }}
 
 /* =========================================================================
-   MOBILE & TABLET RESPONSIVE ADAPTATIONS
+   MOBILE & TABLET RESPONSIVE ADAPTATIONS (<= 992px)
    ========================================================================= */
 
-@media (max-width: 768px) {{
+@media (max-width: 992px) {{
     /* Compact page container on small screens */
     .block-container {{
-        padding-top: 1.25rem !important;
-        padding-bottom: 2.5rem !important;
-        padding-left: 0.65rem !important;
-        padding-right: 0.65rem !important;
+        padding-top: 1rem !important;
+        padding-bottom: 2rem !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
         max-width: 100% !important;
     }}
 
     /* Scaled responsive typography */
     .main-header {{
-        font-size: 1.30rem !important;
+        font-size: 1.25rem !important;
         line-height: 1.25 !important;
     }}
     .sub-header {{
-        font-size: 0.80rem !important;
+        font-size: 0.78rem !important;
         margin-bottom: 0.75rem !important;
         line-height: 1.35 !important;
     }}
@@ -316,53 +316,100 @@ button[data-baseweb="tab"][aria-selected="true"] {{
         display: none !important;
     }}
     button[data-baseweb="tab"] {{
-        font-size: 0.80rem !important;
+        font-size: 0.78rem !important;
         padding: 6px 10px !important;
         white-space: nowrap !important;
         flex-shrink: 0 !important;
     }}
 
-    /* Responsive Grid for Columns */
-    div[data-testid="stHorizontalBlock"] {{
+    /* Universal column wrapping for mobile: targets ALL Streamlit column variants */
+    div[data-testid="stHorizontalBlock"],
+    div.stHorizontalBlock {{
+        display: flex !important;
         flex-wrap: wrap !important;
+        flex-direction: row !important;
+        width: 100% !important;
         gap: 8px !important;
     }}
-    div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {{
-        flex: 1 1 calc(50% - 6px) !important;
-        min-width: calc(50% - 6px) !important;
+
+    /* By default on mobile, make columns flex cleanly */
+    div[data-testid="stHorizontalBlock"] > div[data-testid="stColumn"],
+    div[data-testid="stHorizontalBlock"] > div[data-testid="column"],
+    div.stHorizontalBlock > div.stColumn,
+    div[data-testid="stColumn"],
+    div[data-testid="column"],
+    div.stColumn {{
+        flex: 1 1 100% !important;
+        flex-basis: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-bottom: 4px !important;
     }}
 
-    /* Specific single-item blocks full width */
-    div[data-testid="stHorizontalBlock"]:has(.callout-box) > div[data-testid="column"],
-    div[data-testid="stHorizontalBlock"]:has(.warning-box) > div[data-testid="column"],
-    div[data-testid="stHorizontalBlock"]:has(.js-plotly-plot) > div[data-testid="column"] {{
+    /* Top filter block: Brand selection & Uploader stack cleanly */
+    div[data-testid="stHorizontalBlock"]:has(div[data-testid="stFileUploader"]) > div[data-testid="stColumn"],
+    div[data-testid="stHorizontalBlock"]:has(div[data-testid="stFileUploader"]) > div[data-testid="column"],
+    div.stHorizontalBlock:has(div[data-testid="stFileUploader"]) > div.stColumn {{
         flex: 1 1 100% !important;
         min-width: 100% !important;
+        width: 100% !important;
+    }}
+
+    /* KPI cards: each card takes 100% full width on mobile for maximum legibility */
+    div[data-testid="stHorizontalBlock"]:has(.kpi-card) > div[data-testid="stColumn"],
+    div[data-testid="stHorizontalBlock"]:has(.kpi-card) > div[data-testid="column"],
+    div.stHorizontalBlock:has(.kpi-card) > div.stColumn {{
+        flex: 1 1 100% !important;
+        min-width: 100% !important;
+        width: 100% !important;
+    }}
+
+    /* Donut chart column and Platform cards column stack vertically */
+    div[data-testid="stHorizontalBlock"]:has(.platform-card) > div[data-testid="stColumn"],
+    div[data-testid="stHorizontalBlock"]:has(.platform-card) > div[data-testid="column"],
+    div.stHorizontalBlock:has(.platform-card) > div.stColumn {{
+        flex: 1 1 100% !important;
+        min-width: 100% !important;
+        width: 100% !important;
+    }}
+
+    /* Inner platform cards row: 2 cards per row (50% each) */
+    div[data-testid="stHorizontalBlock"]:has(.platform-card) > div[data-testid="stColumn"]:has(.platform-card),
+    div[data-testid="stHorizontalBlock"]:has(.platform-card) > div[data-testid="column"]:has(.platform-card),
+    div.stHorizontalBlock:has(.platform-card) > div.stColumn:has(.platform-card) {{
+        flex: 1 1 calc(50% - 6px) !important;
+        min-width: calc(50% - 6px) !important;
+        width: calc(50% - 6px) !important;
     }}
 
     /* Responsive KPI Cards: Auto height with compact padding */
     .kpi-card {{
         height: auto !important;
-        min-height: 98px !important;
-        padding: 10px 12px !important;
-        margin-bottom: 4px !important;
+        min-height: 80px !important;
+        padding: 10px 14px !important;
+        margin-bottom: 6px !important;
+        border-radius: 8px !important;
     }}
     .kpi-title {{
-        font-size: 0.68rem !important;
+        font-size: 0.72rem !important;
+        letter-spacing: 0.04em !important;
     }}
     .kpi-value {{
-        font-size: 1.25rem !important;
+        font-size: 1.35rem !important;
+        line-height: 1.25 !important;
     }}
     .kpi-desc {{
-        font-size: 0.68rem !important;
+        font-size: 0.75rem !important;
     }}
 
     /* Responsive Platform Cards */
     .platform-card {{
         height: auto !important;
-        min-height: 85px !important;
+        min-height: 75px !important;
         padding: 8px 10px !important;
         margin-bottom: 4px !important;
+        border-radius: 6px !important;
     }}
     .platform-title {{
         font-size: 0.72rem !important;
@@ -380,16 +427,21 @@ button[data-baseweb="tab"][aria-selected="true"] {{
 
     /* Radio button groups */
     div[role="radiogroup"] {{
+        display: flex !important;
         flex-wrap: wrap !important;
         gap: 6px !important;
     }}
-}}
+    div[role="radiogroup"] label {{
+        margin-right: 8px !important;
+        margin-bottom: 4px !important;
+    }}
 
-/* Extra small mobile (< 380px) */
-@media (max-width: 380px) {{
-    div[data-testid="stHorizontalBlock"] > div[data-testid="column"] {{
-        flex: 1 1 100% !important;
-        min-width: 100% !important;
+    /* Plotly ModeBar on touchscreens: keep toolbar neatly visible without overlap */
+    .js-plotly-plot .plotly .modebar {{
+        top: 4px !important;
+        right: 4px !important;
+        background: rgba(0,0,0,0.15) !important;
+        border-radius: 4px !important;
     }}
 }}
 </style>
@@ -886,47 +938,78 @@ with tab1:
         fig.update_layout(
             paper_bgcolor=chart_bg,
             plot_bgcolor=chart_bg,
-            height=430,
+            height=460,
+            dragmode=False,
             hovermode='x unified',
             hoverlabel=dict(bgcolor=bg_card, font_color=chart_text, font_size=11),
             font=dict(color=chart_text, family="Inter, -apple-system, sans-serif"),
             legend=dict(
                 orientation="h",
-                yanchor="bottom",
-                y=1.02,
-                xanchor="left",
-                x=0,
-                font=dict(color=chart_text, size=9),
+                yanchor="top",
+                y=-0.22,
+                xanchor="center",
+                x=0.5,
+                font=dict(color=chart_text, size=8.5),
                 bgcolor=chart_legend_bg
             ),
-            margin=dict(l=45, r=15, t=45, b=45),
+            margin=dict(l=35, r=15, t=45, b=65),
             xaxis=dict(
-                title=dict(text="Calendar Date", font=dict(color=chart_title_color, size=12)),
+                title=dict(text="Calendar Date", font=dict(color=chart_title_color, size=11)),
                 range=[min_axis_date, max_axis_date],
                 showgrid=True,
                 gridcolor=chart_grid_color,
                 zerolinecolor=chart_grid_color,
-                tickfont=dict(color=chart_axis_color, size=10)
+                tickfont=dict(color=chart_axis_color, size=9)
             ),
             yaxis=dict(
-                title=dict(text="Physical Units", font=dict(color=chart_title_color, size=12)),
+                title=dict(text="Physical Units", font=dict(color=chart_title_color, size=11)),
                 showgrid=True,
                 gridcolor=chart_grid_color,
                 zerolinecolor=chart_grid_color,
-                tickfont=dict(color=chart_axis_color, size=10)
+                tickfont=dict(color=chart_axis_color, size=9)
             )
         )
 
-        st.plotly_chart(fig, use_container_width=True, theme=None, config={'responsive': True, 'displayModeBar': False})
+        st.plotly_chart(
+            fig,
+            use_container_width=True,
+            theme=None,
+            config={
+                'responsive': True,
+                'scrollZoom': False,
+                'doubleClick': 'reset+autosize',
+                'displayModeBar': True,
+                'displaylogo': False,
+                'modeBarButtonsToRemove': ['lasso2d', 'select2d'],
+                'toImageButtonOptions': {'format': 'png'}
+            }
+        )
 
         if sku_hist_filtered.empty:
             st.info(f"ℹ️ **History Notice:** No historical sales records available for *{selected_sku}* in this dataset.")
         else:
+            tip_color = "#60A5FA" if is_dark else "#2563EB"
             st.markdown(
-                f'<div style="color: {text_kpi_desc}; font-size: 0.85rem; margin-top: 4px; margin-bottom: 8px;">'
-                f'Displaying <b>{len(sku_hist_filtered)}</b> historical sales points for window selection <b>{range_option}</b>.'
+                f'<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; color: {text_kpi_desc}; font-size: 0.80rem; margin-top: 4px; margin-bottom: 8px;">'
+                f'<span>Displaying <b>{len(sku_hist_filtered)}</b> points for <b>{range_option}</b>.</span>'
+                f'<span style="color: {tip_color};">💡 <i>Double-tap or tap 🏠 in toolbar to reset view</i></span>'
                 f'</div>',
                 unsafe_allow_html=True
+            )
+
+        with st.expander("🔍 Option: View Large / Full-Screen Detailed Graph"):
+            fig_large = go.Figure(fig)
+            fig_large.update_layout(height=580, dragmode='pan')
+            st.plotly_chart(
+                fig_large,
+                use_container_width=True,
+                theme=None,
+                config={
+                    'responsive': True,
+                    'scrollZoom': True,
+                    'displayModeBar': True,
+                    'displaylogo': False
+                }
             )
 
         st.markdown("<div style='height: 10px;'></div>", unsafe_allow_html=True)
@@ -969,6 +1052,7 @@ with tab1:
                     paper_bgcolor=chart_bg,
                     plot_bgcolor=chart_bg,
                     height=260,
+                    dragmode=False,
                     margin=dict(l=10, r=10, t=10, b=10),
                     showlegend=False,
                     font=dict(color=chart_text, family="Inter, -apple-system, sans-serif")
@@ -1211,12 +1295,27 @@ with tab3:
                 zerolinecolor=chart_grid_color
             )
         )
+        bar_fig.update_layout(
+            dragmode=False
+        )
         bar_fig.update_traces(
             textposition='outside',
             textfont=dict(color=chart_outside_text, size=11, family="Inter, -apple-system, sans-serif"),
             cliponaxis=False
         )
-        st.plotly_chart(bar_fig, use_container_width=True, theme=None, config={'responsive': True, 'displayModeBar': False})
+        st.plotly_chart(
+            bar_fig,
+            use_container_width=True,
+            theme=None,
+            config={
+                'responsive': True,
+                'scrollZoom': False,
+                'doubleClick': 'reset+autosize',
+                'displayModeBar': True,
+                'displaylogo': False,
+                'modeBarButtonsToRemove': ['lasso2d', 'select2d']
+            }
+        )
 
     with c_right:
         st.markdown(f"#### Top 10 SKUs by Forward Demand ({selected_brand})")
@@ -1233,6 +1332,7 @@ with tab3:
             paper_bgcolor=chart_bg,
             plot_bgcolor=chart_bg,
             height=340,
+            dragmode=False,
             margin=dict(l=150, r=20, t=20, b=40),
             font=dict(color=chart_text, family="Inter, -apple-system, sans-serif"),
             xaxis=dict(
@@ -1253,7 +1353,19 @@ with tab3:
             textfont=dict(color=chart_outside_text, size=11, family="Inter, -apple-system, sans-serif"),
             cliponaxis=False
         )
-        st.plotly_chart(top_fig, use_container_width=True, theme=None, config={'responsive': True, 'displayModeBar': False})
+        st.plotly_chart(
+            top_fig,
+            use_container_width=True,
+            theme=None,
+            config={
+                'responsive': True,
+                'scrollZoom': False,
+                'doubleClick': 'reset+autosize',
+                'displayModeBar': True,
+                'displaylogo': False,
+                'modeBarButtonsToRemove': ['lasso2d', 'select2d']
+            }
+        )
 
 # =============================================================================
 # TAB 4: VALIDATION
@@ -1363,9 +1475,22 @@ with tab4:
                 tickfont=dict(color=chart_axis_color, size=11),
                 gridcolor=chart_grid_color,
                 zerolinecolor=chart_grid_color
-            )
+            ),
+            dragmode=False
         )
-        st.plotly_chart(val_fig, use_container_width=True, theme=None, config={'responsive': True, 'displayModeBar': False})
+        st.plotly_chart(
+            val_fig,
+            use_container_width=True,
+            theme=None,
+            config={
+                'responsive': True,
+                'scrollZoom': False,
+                'doubleClick': 'reset+autosize',
+                'displayModeBar': True,
+                'displaylogo': False,
+                'modeBarButtonsToRemove': ['lasso2d', 'select2d']
+            }
+        )
 
     if not val_metrics.empty:
         st.markdown("#### Platform-Specific Performance Metrics")

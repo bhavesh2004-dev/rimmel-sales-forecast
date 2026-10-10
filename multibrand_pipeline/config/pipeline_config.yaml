@@ -1,0 +1,222 @@
+# ==============================================================================
+# MULTI-BRAND DEMAND FORECASTING PIPELINE CONFIGURATION
+# Principle: Brand is Data, Not Code. All dates, aliases, and thresholds are externalized.
+# ==============================================================================
+
+pipeline:
+  name: "multibrand_demand_forecasting_pipeline"
+  version: "2.0.0"
+
+paths:
+  database_path: "multibrand_pipeline/data/multibrand_master.db"
+  model_path: "multibrand_pipeline/models/global_lgbm_model.pkl"
+  model_metadata_path: "multibrand_pipeline/models/model_metadata.json"
+  feature_schema_path: "multibrand_pipeline/config/feature_schema.json"
+  client_report_path: "multibrand_pipeline/reports/CLIENT_DEMAND_FORECAST_AND_INVENTORY_REPORT.xlsx"
+  benchmark_report_path: "multibrand_pipeline/reports/MULTIBRAND_BENCHMARK_VALIDATION_REPORT.xlsx"
+
+timeline:
+  # Causal context lookback window (sales history only; no stock telemetry)
+  context_start: "2025-01-01"
+  context_end: "2025-07-31"
+
+  # Initial model training window (stock telemetry is reliably active)
+  training_start: "2025-08-01"
+  training_end: "2026-08-31"
+
+  # Official locked holdout benchmark period (isolated until final evaluation)
+  benchmark_start: "2026-09-01"
+  benchmark_end: "2026-09-10"
+
+  # Final operational model refit window (incorporating benchmark momentum)
+  refit_training_end: "2026-09-10"
+
+  # Forward production forecast horizon
+  forward_forecast_start: "2026-09-11"
+  forward_forecast_end: "2026-09-20"
+  forecast_horizon_days: 10
+
+  # Stock telemetry historical validity boundary (no stock backfill prior to this)
+  stock_telemetry_valid_start: "2025-08-01"
+
+schema_aliases:
+  brand:
+    - "brand"
+    - "brand_name"
+    - "brand_id"
+    - "brand_code"
+  date:
+    - "date"
+    - "sale_date"
+    - "order_date"
+    - "transaction_date"
+    - "created_at"
+  sku:
+    - "sku"
+    - "product_sku"
+    - "item_sku"
+    - "listing_sku"
+  actual_sku:
+    - "actual_sku"
+    - "canonical_sku"
+    - "master_sku"
+    - "parent_sku"
+  title:
+    - "title"
+    - "product_name"
+    - "item_name"
+    - "product_title"
+    - "product"
+  category:
+    - "category"
+    - "product_category"
+    - "department"
+  quantity:
+    - "units_sold"
+    - "quantity"
+    - "qty"
+    - "units"
+    - "sales_units"
+  orders_count:
+    - "orders_count"
+    - "orders"
+    - "order_count"
+    - "transactions"
+  price:
+    - "selling_price"
+    - "avg_item_sales_price"
+    - "item_price"
+    - "unit_price"
+    - "price"
+    - "gross_revenue"
+  channel:
+    - "channel"
+    - "platform"
+    - "sales_channel"
+    - "marketplace"
+  stock:
+    - "current_stock"
+    - "stock"
+    - "inventory"
+    - "available_stock"
+    - "stock_level"
+    - "warehouse_stock"
+  pack_multiplier:
+    - "pack_multiplier"
+    - "pack_size"
+    - "bundle_qty"
+    - "multiplier"
+  launch_date:
+    - "launch_date"
+    - "release_date"
+    - "created_date"
+  amazon_sessions:
+    - "amazon_sessions"
+    - "sessions"
+    - "glance_views"
+  buy_box_percentage:
+    - "buy_box_percentage"
+    - "buy_box_pct"
+    - "buy_box"
+  ebay_promoted_flag:
+    - "ebay_promoted_flag"
+    - "promoted_listing"
+    - "is_promoted"
+  restock_date:
+    - "restock_date"
+    - "expected_restock"
+
+platform_mapping:
+  Amazon:
+    - "amazon"
+    - "amz"
+    - "fba"
+    - "vendor central"
+    - "seller central"
+  eBay:
+    - "bellas beauty ebay"
+    - "ebay"
+  Website:
+    - "website"
+    - "shopify"
+    - "woocommerce"
+    - "web"
+    - "direct"
+    - "d2c"
+    - "glam tts"
+  Other:
+    - "other"
+    - "wholesale"
+    - "b2b"
+    - "manual"
+    - "offline"
+    - "sample"
+
+model_parameters:
+  objective: "regression"
+  metric: "rmse"
+  boosting_type: "gbdt"
+  n_estimators: 150
+  learning_rate: 0.05
+  max_depth: 6
+  num_leaves: 31
+  min_child_samples: 20
+  min_child_weight: 0.001
+  min_split_gain: 0.0
+  colsample_bytree: 1.0
+  subsample: 1.0
+  random_state: 42
+  n_jobs: -1
+  verbose: -1
+
+calibration:
+  zero_demand_alpha: 0.10
+  stockout_beta: 0.10
+  zero_demand_v_threshold: 0.0
+  promo_momentum_threshold: 1.25
+
+inventory_risk:
+  cv_volatility_threshold: 1.2
+  healthy_exp_min: 5.0
+  healthy_cv_max: 0.6
+  low_demand_anchor_max: 1.0
+  momentum_growth_threshold: 2.0
+
+replenishment:
+  enabled: true
+  lead_time_days: 10
+  minimum_stock_level: 6
+  demand_basis: "10_day_forecast"
+  daily_rate_window_days: 10
+  rounding_method: "ceil"
+
+reporting:
+  forecast_inventory_sheet_name: "Forecast_Inventory"
+  rop_sheet_name: "ROP"
+  forecast_inventory_columns:
+    - "Brand"
+    - "SKU"
+    - "Product"
+    - "Current Stock"
+    - "Forecast Period"
+    - "Amazon Predicted"
+    - "eBay Predicted"
+    - "Website Predicted"
+    - "Other Predicted"
+    - "10-Day Forecast"
+    - "Days of Cover"
+    - "Confidence"
+    - "Risk"
+    - "Recommended Action"
+    - "Reason"
+  rop_columns:
+    - "Brand"
+    - "SKU"
+    - "Product"
+    - "Current Stock"
+    - "10-Day Forecast"
+    - "Avg Daily Usage"
+    - "Lead-Time Demand"
+    - "Target Stock"
+    - "Replenishment Qty"
+    - "ROP Status"

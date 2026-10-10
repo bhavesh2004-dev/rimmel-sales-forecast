@@ -1,0 +1,400 @@
+{
+  "model_A": {
+    "combined_raw": {
+      "actual": 2627.0,
+      "predicted": 2929.49,
+      "abs_error": 2835.93,
+      "wape": 107.95,
+      "bias": 11.51,
+      "rmse": 0.5785,
+      "mae": 0.126
+    },
+    "combined_calib": {
+      "actual": 2627.0,
+      "predicted": 2655.79,
+      "abs_error": 2601.72,
+      "wape": 99.04,
+      "bias": 1.1,
+      "rmse": 0.5785,
+      "mae": 0.1156
+    },
+    "by_brand_raw": {
+      "RIMMEL": {
+        "actual": 2069.0,
+        "predicted": 2311.39,
+        "abs_error": 2045.54,
+        "wape": 98.87,
+        "bias": 11.72,
+        "rmse": 0.6134,
+        "mae": 0.1448
+      },
+      "MAX_FACTOR": {
+        "actual": 558.0,
+        "predicted": 618.1,
+        "abs_error": 790.4,
+        "wape": 141.65,
+        "bias": 10.77,
+        "rmse": 0.5144,
+        "mae": 0.0943
+      }
+    },
+    "by_brand_calib": {
+      "RIMMEL": {
+        "actual": 2069.0,
+        "predicted": 2145.68,
+        "abs_error": 1906.57,
+        "wape": 92.15,
+        "bias": 3.71,
+        "rmse": 0.6124,
+        "mae": 0.1349
+      },
+      "MAX_FACTOR": {
+        "actual": 558.0,
+        "predicted": 510.11,
+        "abs_error": 695.15,
+        "wape": 124.58,
+        "bias": -8.58,
+        "rmse": 0.5164,
+        "mae": 0.083
+      }
+    },
+    "by_platform_raw": {
+      "Amazon": {
+        "actual": 1154.0,
+        "predicted": 1362.88,
+        "abs_error": 1192.35,
+        "wape": 103.32,
+        "bias": 18.1,
+        "rmse": 0.7431,
+        "mae": 0.1713
+      },
+      "Other": {
+        "actual": 2.0,
+        "predicted": 21.63,
+        "abs_error": 23.57,
+        "wape": 1178.67,
+        "bias": 981.7,
+        "rmse": 0.0424,
+        "mae": 0.0171
+      },
+      "Website": {
+        "actual": 79.0,
+        "predicted": 117.08,
+        "abs_error": 186.82,
+        "wape": 236.47,
+        "bias": 48.2,
+        "rmse": 0.455,
+        "mae": 0.0358
+      },
+      "eBay": {
+        "actual": 1392.0,
+        "predicted": 1427.9,
+        "abs_error": 1433.2,
+        "wape": 102.96,
+        "bias": 2.58,
+        "rmse": 0.5397,
+        "mae": 0.1601
+      }
+    },
+    "by_platform_calib": {
+      "Amazon": {
+        "actual": 1154.0,
+        "predicted": 1259.37,
+        "abs_error": 1111.55,
+        "wape": 96.32,
+        "bias": 9.13,
+        "rmse": 0.7426,
+        "mae": 0.1597
+      },
+      "Other": {
+        "actual": 2.0,
+        "predicted": 5.03,
+        "abs_error": 7.03,
+        "wape": 351.39,
+        "bias": 151.7,
+        "rmse": 0.0407,
+        "mae": 0.0051
+      },
+      "Website": {
+        "actual": 79.0,
+        "predicted": 60.91,
+        "abs_error": 134.55,
+        "wape": 170.32,
+        "bias": -22.89,
+        "rmse": 0.4568,
+        "mae": 0.0258
+      },
+      "eBay": {
+        "actual": 1392.0,
+        "predicted": 1330.47,
+        "abs_error": 1348.6,
+        "wape": 96.88,
+        "bias": -4.42,
+        "rmse": 0.5394,
+        "mae": 0.1507
+      }
+    },
+    "diagnostics": {
+      "actual_zero_rate": 95.24,
+      "pred_zero_rate_raw": 79.73,
+      "pred_zero_rate_calib": 80.92,
+      "fp_rows_raw": 388,
+      "fp_rows_calib": 365,
+      "active_rows": 1072,
+      "active_under": 871,
+      "active_over": 201
+    },
+    "top_features": [
+      {
+        "feature": "lag_1",
+        "split": 580,
+        "gain": 12682619.66567421
+      },
+      {
+        "feature": "v7",
+        "split": 354,
+        "gain": 3910754.9307994843
+      },
+      {
+        "feature": "canonical_sku",
+        "split": 320,
+        "gain": 346098.67751693726
+      },
+      {
+        "feature": "v14",
+        "split": 105,
+        "gain": 259144.6062889099
+      },
+      {
+        "feature": "lag_7",
+        "split": 116,
+        "gain": 257500.01329803467
+      },
+      {
+        "feature": "v30",
+        "split": 61,
+        "gain": 158974.58256530762
+      },
+      {
+        "feature": "days_since_stockout",
+        "split": 70,
+        "gain": 137412.4128265381
+      },
+      {
+        "feature": "buy_box_7d",
+        "split": 90,
+        "gain": 137262.8917541504
+      },
+      {
+        "feature": "current_stock",
+        "split": 92,
+        "gain": 128305.60813140869
+      },
+      {
+        "feature": "price_vs_30d",
+        "split": 117,
+        "gain": 124425.65702819824
+      }
+    ]
+  },
+  "model_B": {
+    "combined_raw": {
+      "actual": 2627.0,
+      "predicted": 2929.49,
+      "abs_error": 2835.93,
+      "wape": 107.95,
+      "bias": 11.51,
+      "rmse": 0.5785,
+      "mae": 0.126
+    },
+    "combined_calib": {
+      "actual": 2627.0,
+      "predicted": 2655.79,
+      "abs_error": 2601.72,
+      "wape": 99.04,
+      "bias": 1.1,
+      "rmse": 0.5785,
+      "mae": 0.1156
+    },
+    "by_brand_raw": {
+      "RIMMEL": {
+        "actual": 2069.0,
+        "predicted": 2311.39,
+        "abs_error": 2045.54,
+        "wape": 98.87,
+        "bias": 11.72,
+        "rmse": 0.6134,
+        "mae": 0.1448
+      },
+      "MAX_FACTOR": {
+        "actual": 558.0,
+        "predicted": 618.1,
+        "abs_error": 790.4,
+        "wape": 141.65,
+        "bias": 10.77,
+        "rmse": 0.5144,
+        "mae": 0.0943
+      }
+    },
+    "by_brand_calib": {
+      "RIMMEL": {
+        "actual": 2069.0,
+        "predicted": 2145.68,
+        "abs_error": 1906.57,
+        "wape": 92.15,
+        "bias": 3.71,
+        "rmse": 0.6124,
+        "mae": 0.1349
+      },
+      "MAX_FACTOR": {
+        "actual": 558.0,
+        "predicted": 510.11,
+        "abs_error": 695.15,
+        "wape": 124.58,
+        "bias": -8.58,
+        "rmse": 0.5164,
+        "mae": 0.083
+      }
+    },
+    "by_platform_raw": {
+      "Amazon": {
+        "actual": 1154.0,
+        "predicted": 1362.88,
+        "abs_error": 1192.35,
+        "wape": 103.32,
+        "bias": 18.1,
+        "rmse": 0.7431,
+        "mae": 0.1713
+      },
+      "Other": {
+        "actual": 2.0,
+        "predicted": 21.63,
+        "abs_error": 23.57,
+        "wape": 1178.67,
+        "bias": 981.7,
+        "rmse": 0.0424,
+        "mae": 0.0171
+      },
+      "Website": {
+        "actual": 79.0,
+        "predicted": 117.08,
+        "abs_error": 186.82,
+        "wape": 236.47,
+        "bias": 48.2,
+        "rmse": 0.455,
+        "mae": 0.0358
+      },
+      "eBay": {
+        "actual": 1392.0,
+        "predicted": 1427.9,
+        "abs_error": 1433.2,
+        "wape": 102.96,
+        "bias": 2.58,
+        "rmse": 0.5397,
+        "mae": 0.1601
+      }
+    },
+    "by_platform_calib": {
+      "Amazon": {
+        "actual": 1154.0,
+        "predicted": 1259.37,
+        "abs_error": 1111.55,
+        "wape": 96.32,
+        "bias": 9.13,
+        "rmse": 0.7426,
+        "mae": 0.1597
+      },
+      "Other": {
+        "actual": 2.0,
+        "predicted": 5.03,
+        "abs_error": 7.03,
+        "wape": 351.39,
+        "bias": 151.7,
+        "rmse": 0.0407,
+        "mae": 0.0051
+      },
+      "Website": {
+        "actual": 79.0,
+        "predicted": 60.91,
+        "abs_error": 134.55,
+        "wape": 170.32,
+        "bias": -22.89,
+        "rmse": 0.4568,
+        "mae": 0.0258
+      },
+      "eBay": {
+        "actual": 1392.0,
+        "predicted": 1330.47,
+        "abs_error": 1348.6,
+        "wape": 96.88,
+        "bias": -4.42,
+        "rmse": 0.5394,
+        "mae": 0.1507
+      }
+    },
+    "diagnostics": {
+      "actual_zero_rate": 95.24,
+      "pred_zero_rate_raw": 79.73,
+      "pred_zero_rate_calib": 80.92,
+      "fp_rows_raw": 388,
+      "fp_rows_calib": 365,
+      "active_rows": 1072,
+      "active_under": 871,
+      "active_over": 201
+    },
+    "brand_id_gain": 0.0,
+    "brand_id_splits": 0,
+    "top_features": [
+      {
+        "feature": "lag_1",
+        "split": 580,
+        "gain": 12682619.66567421
+      },
+      {
+        "feature": "v7",
+        "split": 354,
+        "gain": 3910754.9307994843
+      },
+      {
+        "feature": "canonical_sku",
+        "split": 320,
+        "gain": 346098.67751693726
+      },
+      {
+        "feature": "v14",
+        "split": 105,
+        "gain": 259144.6062889099
+      },
+      {
+        "feature": "lag_7",
+        "split": 116,
+        "gain": 257500.01329803467
+      },
+      {
+        "feature": "v30",
+        "split": 61,
+        "gain": 158974.58256530762
+      },
+      {
+        "feature": "days_since_stockout",
+        "split": 70,
+        "gain": 137412.4128265381
+      },
+      {
+        "feature": "buy_box_7d",
+        "split": 90,
+        "gain": 137262.8917541504
+      },
+      {
+        "feature": "current_stock",
+        "split": 92,
+        "gain": 128305.60813140869
+      },
+      {
+        "feature": "price_vs_30d",
+        "split": 117,
+        "gain": 124425.65702819824
+      }
+    ]
+  }
+}

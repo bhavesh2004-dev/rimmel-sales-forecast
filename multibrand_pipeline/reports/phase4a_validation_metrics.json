@@ -1,0 +1,42 @@
+{
+  "combined": {
+    "actual": 2627.0,
+    "predicted": 2582.0,
+    "abs_error": 1435.0,
+    "wape": 54.63,
+    "bias": -1.71,
+    "mae": 1.2951,
+    "rmse": 5.788
+  },
+  "rimmel": {
+    "actual": 2069.0,
+    "predicted": 2052.0,
+    "abs_error": 1077.0,
+    "wape": 52.05,
+    "bias": -0.82,
+    "mae": 1.5979,
+    "rmse": 6.9935
+  },
+  "max_factor": {
+    "actual": 558.0,
+    "predicted": 530.0,
+    "abs_error": 358.0,
+    "wape": 64.16,
+    "bias": -5.02,
+    "mae": 0.8249,
+    "rmse": 3.0938
+  },
+  "platform_totals": {
+    "Amazon Predicted": 1162,
+    "eBay Predicted": 1371,
+    "Website Predicted": 45,
+    "Other Predicted": 4,
+    "10-Day Forecast Total": 2582,
+    "Actual Units Total": 2627
+  },
+  "sku_counts": {
+    "total": 1108,
+    "rimmel": 674,
+    "max_factor": 434
+  }
+}

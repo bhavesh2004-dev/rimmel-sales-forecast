@@ -1,6 +1,0 @@
-Configuration,Features_Count,Pinball_Loss,Coverage_Pct,Mean_ROP,Service_Level_Pct,Stockout_Rate_Pct,Stockout_Events,Avg_Inventory,Total_Units_Ordered,PO_Count
-A. Structured Only,22,2.7492,94.99,33.25,93.8,2.86,12,564.5,2283.0,57
-B. Structured + Noul,23,2.7417,95.05,33.33,93.86,2.62,11,564.5,2263.0,58
-C. Structured + Score,23,2.757,94.99,33.45,93.8,2.86,12,564.5,2227.0,52
-D. Structured + Choice,25,2.7356,94.82,32.57,93.8,2.86,12,564.4,2238.0,52
-E. Structured + All Jev,28,2.7439,94.93,32.84,93.92,2.38,10,564.6,2281.0,58

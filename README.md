@@ -1,225 +1,175 @@
-# Rimmel Multi-Platform Demand Forecasting & Inventory Planning System
+# Multi-Brand Demand Forecasting & Replenishment Platform
 
-[![Production Certified](https://img.shields.io/badge/Production%20Status-Certified%20Exp6-brightgreen.svg)]()
+[![Production Certified](https://img.shields.io/badge/Production%20Status-Certified%20Production%20v2.0-brightgreen.svg)]()
+[![Model Engine](https://img.shields.io/badge/Model-Shared%20LightGBM%20Regressor-orange.svg)]()
+[![Database](https://img.shields.io/badge/Database-MySQL%208.0%2B-blue.svg)]()
+[![Tests](https://img.shields.io/badge/Tests-52%2F52%20Passing-success.svg)]()
 [![Python Version](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)]()
-[![Model Engine](https://img.shields.io/badge/Model-LightGBM%20Regressor-orange.svg)]()
-[![Tests](https://img.shields.io/badge/Tests-12%2F12%20Passing-success.svg)]()
 [![License](https://img.shields.io/badge/License-Proprietary-red.svg)]()
 
-A production-grade, mathematically disciplined machine learning platform designed to forecast multi-channel demand, mitigate stockout feedback loops, and optimize central warehouse procurement across **674 cosmetics products (Rimmel catalog)**.
+A production-grade, mathematically disciplined machine learning platform designed to forecast multi-channel daily product demand, mitigate stockout feedback loops, and optimize central warehouse procurement across **1,433 product SKUs** spanning seven retail beauty and cosmetics brands:
+
+- **Rimmel** (767 SKUs)
+- **Max Factor** (475 SKUs)
+- **Kifra** (68 SKUs)
+- **Weleda** (61 SKUs)
+- **Delilah** (29 SKUs)
+- **Geek & Gorgeous** (20 SKUs)
+- **Frank Body** (13 SKUs)
 
 ---
 
-## 📖 Key Documentation
-
-For deep technical dives, mathematical proofs, and architectural blueprints, refer to:
-
-* 📘 **[Complete Technical & Business Knowledge Manual (34 Sections)](docs/CLIENT_FORECASTING_AND_BUSINESS_GUIDE.md)**  
-  *(Comprehensive 129 KB manual covering business context, ZERO vs AVERAGE proof, feature dictionary, single SKU trace, and 20 client FAQs. Also available as an executive PDF: [`docs/CLIENT_FORECASTING_AND_BUSINESS_GUIDE.pdf`](docs/CLIENT_FORECASTING_AND_BUSINESS_GUIDE.pdf))*
-* 🏗️ **[Codebase Structure & File Audit](docs/CODEBASE_STRUCTURE_AND_FILE_AUDIT.md)**  
-  *(Comprehensive repository inventory, production dependency map, and cleanup blueprint)*
-* 📋 **[QA Audit & Correction Reports](docs/qa/)**  
-  *(Official 63-test QA audit, correction report, and demand dynamics analysis)*
-* 🚀 **[Deployment Checklist](docs/DEPLOYMENT_CHECKLIST.md)**  
-  *(Pre-commit verification gates, test commands, and production sign-off)*
-
----
-
-## 🎯 1. Business Problem & Core Objectives
-
-In multi-channel e-commerce retail, beauty and cosmetics products are sold simultaneously across multiple digital storefronts:
-1. **Amazon UK** (Merchant-Fulfilled Network via Mayah Beauty and Bellas Beauty)
-2. **eBay UK** (Merchant-Fulfilled Network via Mayah Beauty and Bellas Beauty)
-3. **Direct-to-Consumer Website** (GLAMBEAUTY Web Store)
-4. **Other Wholesale & Social Channels** (TikTok Shop legacy, UFK Retail store samples)
-
-### The Central Shared Warehouse Constraint
-Crucially, **all four selling channels draw physical stock from ONE central shared warehouse pool**. If an eBay customer buys the last 5 tubes of mascara, an Amazon customer cannot buy them ten minutes later. 
-
-```
-                                  ┌─────────────────────────────┐
-                                  │   CENTRAL SHARED WAREHOUSE  │
-                                  │   (Single Physical Stock)   │
-                                  └──────────────┬──────────────┘
-                                                 │
-                      ┌──────────────────────────┼──────────────────────────┐
-                      ▼                          ▼                          ▼
-               ┌─────────────┐            ┌─────────────┐            ┌─────────────┐
-               │   Amazon    │            │    eBay     │            │ Website /   │
-               │ Storefronts │            │ Storefronts │            │ Other (B2B) │
-               └─────────────┘            └─────────────┘            └─────────────┘
-```
-
-> **CORE GOVERNANCE RULE**: Physical inventory is held in a single shared warehouse pool per SKU. **NEVER sum inventory across platforms**.
-
-### The Failure of Naive Averages
-Traditional retail methods rely on simple historical moving averages. In intermittent e-commerce, simple averages fail catastrophically:
-1. **The Censored Demand Trap**: An average treats a day with 0 sales due to a complete warehouse stockout as "zero customer demand," creating a vicious cycle of structural under-ordering.
-2. **The Intermittent Bias Trap**: For slow-moving items selling 1 unit every 15 days, imputing positive average sales on non-transaction days creates massive phantom demand (+1,178% WAPE).
-
----
-
-## 🏆 2. Certified Production System (Exp6 Architecture)
-
-The certified production engine (`Exp6`) is the culmination of extensive scientific experimentation:
-
-```
-    LONG-TERM BASE DEMAND (v365, v180, sales_days_90)
-              +
-    RECENT RUN-RATE & MOMENTUM (v7, v14, v30, v14_vs_v30)
-              +
-    CHANNEL-SPECIFIC TELEMETRY (Amazon Sessions, Buy Box %, eBay Promos)
-              +
-    CENTRAL SHARED INVENTORY SIGNALS (current_stock, days_since_stockout)
-              │
-              ▼
-    LIGHTGBM REGRESSOR (n_estimators=150, max_depth=6, num_leaves=31, lr=0.05)
-              │
-              ▼
-    POST-HOC COMBINED CALIBRATION (alpha=0.10 zero-suppression, beta=0.10 stockout-dampening)
-              │
-              ▼
-    10-DAY PHYSICAL AGGREGATION (Sum continuous daily predictions BEFORE whole-unit rounding)
-```
-
-### Empirical Performance Benchmarks
-Evaluated on the strictly unseen **September 1–10, 2026** holdout validation window:
-
-| Benchmark Metric | Empirical Production Result | Operational Significance |
-| :--- | :---: | :--- |
-| **Catalog Scope** | **674 Canonical SKUs** | Complete active product catalog |
-| **Holdout Actual Units** | **2,069.0 physical units** | Ground truth customer purchases |
-| **Continuous Model Predicted** | **2,121.2 units** | **+2.52% net catalog bias** (0.1326 MAE, 0.5847 RMSE) |
-| **Client 10-Day SKU Summary** | **2,079 units** | **+10 units / +0.48% net variance** |
-| **Forward Forecast (Sep 11–20)** | **1,934 units** | Amazon: 976 (50.5%), eBay: 948 (49.0%), Web: 7, Other: 3 |
-| **Walk-Forward Validation** | **100% win rate** | Outperformed baseline across all 4 rolling test windows |
-| **Future Data Leakage** | **0.00%** | All 74 features strictly bounded at $t < T$ |
-
----
-
-## 🏗️ 3. Repository Directory Structure
+## 🏗️ Repository Structure
 
 ```text
-ml_project/
-│
-├── app.py                         # Streamlit Interactive Web Application (Decoupled, Read-Only)
-├── requirements.txt               # Locked Python dependencies (LightGBM, Streamlit, etc.)
-├── .gitignore                     # Repository hygiene & client report preservation rules
-├── README.md                      # Operational overview (this document)
-│
-├── src/                           # Production Forecasting & Normalization Package (7 Active Modules)
-│   ├── __init__.py                # Package entrypoint exposing certified pipeline
-│   ├── final_production_system.py # Certified Exp6 end-to-end retraining, forecast & report orchestrator
-│   ├── build_sqlite_database.py   # SQLite database builder (rimmel_clean.db)
-│   ├── data_ingestion.py          # Immutable raw Excel ingestion with SHA-256 lineage
-│   ├── normalization.py           # Daily observation layer & operational state tagging
-│   ├── platform_mapping.py        # Channel-to-platform normalization
-│   ├── sku_mapping.py             # Raw SKU to Canonical SKU hierarchy resolution
-│   └── phase2_feature_engineering.py # 74-feature causal engineering engine
-│
-├── config/
-│   ├── __init__.py
-│   └── settings.py                # Central production parameters, paths, and calibration constants
-│
-├── models/                        # Serialized Model Artifacts
-│   ├── production_lgbm_model.pkl  # Trained LightGBM regressor (SHA-256 verified)
-│   ├── production_features.json   # 74 causal feature definitions & ordering
-│   └── production_model_config.json # Hyperparameters, metrics, and cryptographic hashes
-│
-├── reports/                       # Client Excel Deliverables
-│   ├── Rimmel_Validation_Sep01_Sep10_2026.xlsx       # Primary Holdout Validation (8 Sheets)
-│   ├── Rimmel_Forward_Forecast_Sep11_Sep20_2026.xlsx # Primary Forward Forecast (4 Sheets)
-│   ├── validation_report_sep_01_to_10_2026.xlsx      # Backward-compatible copy
-│   ├── production_forecast_sep_11_to_20_2026.xlsx    # Backward-compatible copy
-│   └── Rimmel_Dataset_and_Model_Explanation_Guide.pdf # Client explanation PDF guide
-│
-├── data/                          # Data Layer
-│   ├── rimmel_clean.db            # Master clean SQLite database (101k raw rows, 573k grid rows)
-│   ├── Rimmel Brand Sales Data - 1 Jan 2025 to 10 Sep 2026.xlsx # Immutable source data
-│   ├── raw/                       # Raw ingest folder
-│   └── processed/                 # Cached daily and SKU summaries for UI dashboard
-│
-├── tests/                         # Automated Regression Test Suite
-│   ├── __init__.py
-│   ├── test_production_system.py  # Model params, report schemas, unit sums, db integrity
-│   └── test_feature_leakage.py    # Temporal bounds, lag matching, platform feature isolation
-│
-├── docs/                          # Consolidated System Documentation
-│   ├── CLIENT_FORECASTING_AND_BUSINESS_GUIDE.md # Complete 34-section technical & business manual
-│   ├── CLIENT_FORECASTING_AND_BUSINESS_GUIDE.pdf # Publication-grade executive PDF
-│   ├── DEPLOYMENT_CHECKLIST.md                  # Pre-commit & production deployment gate checklist
-│   ├── CODEBASE_STRUCTURE_AND_FILE_AUDIT.md     # Full repository inventory & dependency audit
-│   ├── architecture/              # Internal algorithmic & pipeline architectural guides
-│   ├── qa/                        # Official QA audit compliance reports & empirical evidence
-│   └── archive/                   # Historical audit and git migration reports
-│
-├── experiments/                   # Isolated Research Experiments
-│   └── rop_xgboost/               # Reorder Point (ROP) + TypeSafe Jev incremental value research
-│
-└── archive/                       # Preserved Historical Versions & Runners
-    ├── phase_runners/             # Deprecated Phase 1–5 runners and early generators
-    ├── raw_data_versions/         # Historical raw Excel dataset versions
-    ├── qa_test_harness/           # 63-test QA test harness scripts and artifacts
-    ├── legacy_scratch/            # Historical diagnostic scratchpads
-    └── previous_versions/         # Early heuristic models & prototypes
+rimmel-sales-forecast/
+├── .env.example              # Template environment credentials file (safe for git)
+├── .gitignore                # Git exclusions (strictly ignores .env, raw dumps, large archives)
+├── README.md                 # Primary project overview and QA handover guide
+├── requirements.txt          # Python production and testing dependencies
+├── schema_init.sql           # MySQL DDL initialization script
+├── app.py                    # Multi-brand interactive operational Streamlit UI
+└── multibrand_pipeline/      # Certified 7-Brand Machine Learning Pipeline
+    ├── README.md             # Detailed pipeline technical manual
+    ├── run_pipeline.py       # Master end-to-end production runner (Stages 1-5)
+    ├── run_dynamic_pipeline.py # Dynamic cutoff discovery & holdout validation runner
+    ├── config/               # Configuration files & feature schemas
+    │   ├── dynamic_pipeline_config.yaml
+    │   ├── feature_schema.json
+    │   └── pipeline_config.yaml
+    ├── models/               # Certified LightGBM model weights & metadata
+    │   ├── global_lgbm_model.pkl
+    │   └── model_metadata.json
+    ├── reports/              # Certified deliverable workbooks & reports
+    │   ├── MULTIBRAND_10DAY_OPERATIONAL_FORECAST_COMBINED.xlsx
+    │   └── ...
+    ├── src/                  # Production pipeline source code
+    │   ├── db_manager.py     # MySQL connection and pooling manager
+    │   ├── data_discovery.py # Dynamic temporal cutoff discovery
+    │   ├── observation_grid.py # Cartesian daily grid generation
+    │   ├── features.py       # 60 causal feature calculation (zero leakage)
+    │   ├── forecast.py       # LightGBM forward inference
+    │   ├── inventory.py      # Shared warehouse stock pool logic
+    │   ├── replenishment.py  # ROP replenishment calculations
+    │   ├── generate_combined_operational_excel.py # 21-column Excel builder
+    │   └── simplify_and_import_operational_forecast.py # MySQL persistence
+    └── tests/                # Automated QA test suite (52 test cases)
+        ├── test_causal_leakage.py
+        ├── test_dynamic_date_discovery.py
+        ├── test_feature_availability.py
+        ├── test_forecast_horizon.py
+        ├── test_forecast_recursion.py
+        ├── test_inventory_calculations.py
+        ├── test_mysql_output_schema.py
+        ├── test_observation_logic.py
+        ├── test_replenishment.py
+        ├── test_report_schema.py
+        ├── test_schema_parity.py
+        ├── test_source_ingestion_reconciliation.py
+        └── test_validation_leakage.py
 ```
 
 ---
 
-## ⚡ 4. Quick-Start Guide
+## 🚀 Quality Testing (QA) Handover Guide
 
-### Step 1: Environment Setup
+This repository has been prepared specifically for rigorous evaluation by the **Quality Testing (QA) Team**. Follow these steps to clone, configure, test, and run the pipeline:
+
+### 1. Environment Installation
+Clone the repository and set up a virtual environment:
 ```bash
-# Clone the repository
 git clone https://github.com/bhavesh2004-dev/rimmel-sales-forecast.git
 cd rimmel-sales-forecast
-
-# Create and activate virtual environment
 python -m venv venv
-venv\Scripts\activate          # Windows PowerShell / CMD
-# source venv/bin/activate     # macOS / Linux
+# On Windows:
+venv\Scripts\activate
+# On Linux/macOS:
+source venv/bin/activate
 
-# Install dependencies
 pip install -r requirements.txt
 ```
 
-### Step 2: Run Automated Regression Tests
-Execute the complete test suite to verify model integrity, feature bounds, report schemas, and actual unit sums:
+### 2. Configure Database Environment Credentials
+Create a `.env` file in the repository root by copying `.env.example`:
 ```bash
-python -m unittest discover tests
+cp .env.example .env
 ```
-*Expected result: `Ran 12 tests in ~4.4s ... OK`.*
+Provide your MySQL connection credentials in `.env`:
+```ini
+MYSQL_HOST=127.0.0.1
+MYSQL_PORT=3306
+MYSQL_DATABASE=multibrand_forecasting_dev
+MYSQL_USER=forecast_app
+MYSQL_PASSWORD=your_secure_password
+```
+> **Security Guarantee**: The `.env` file and all credentials are automatically protected by `.gitignore` and are never committed or pushed to GitHub.
 
-### Step 3: Launch Interactive Dashboard
+### 3. Initialize Database Schema (For Fresh Installations)
+To create the canonical database tables, execute `schema_init.sql`:
 ```bash
-streamlit run app.py
+mysql -u forecast_app -p multibrand_forecasting_dev < schema_init.sql
 ```
-Open your browser at `http://localhost:8501` to explore:
-- **Product Inspector**: Historical sales curves, holdout validation, forward forecast lines, and platform share donuts for any individual SKU.
-- **Data View**: Searchable, filterable tables of holdout validation and forward forecasts.
-- **Forecast Overview**: High-level portfolio rollups, platform volume contributions, and top 10 SKUs.
-- **Validation**: Retrospective holdout benchmark actual vs. predicted comparison.
-- **Inventory / Planning**: Central shared warehouse stock, Days of Cover, and risk-filtered reorder tables.
 
-### Step 4: Regenerate Official Client Excel Reports
-To re-run inference and generate fresh Excel workbooks from SQLite:
+### 4. Execute the Automated Test Suite (52 Tests)
+Run pytest across all 13 test suites:
 ```bash
-python -m src.final_production_system
+python -m pytest multibrand_pipeline/tests -v
 ```
+All **52 tests** should pass in ~35 seconds with 0 failures and 0 errors:
+- **Causal Leakage**: Validates zero future lookahead (lag-1, shift-1).
+- **Dynamic Discovery**: Validates automatic discovery of cutoff dates per brand.
+- **Feature Parity**: Validates all 60 schema features across history tiers.
+- **Inventory & Replenishment**: Validates single shared warehouse stock rules, Lead Time Demand, and Minimum Stock Level invariants.
+- **MySQL Output Schema**: Validates single canonical output table `operational_forecast_rop` with 21 columns and unique constraints.
+
+### 5. Execute the Master Pipeline End-to-End
+Execute the full master pipeline:
+```bash
+python multibrand_pipeline/run_pipeline.py
+```
+
+Execution produces:
+1. Console progress logs detailing each of the 5 pipeline stages.
+2. The certified 21-column operational Excel deliverable at:
+   `multibrand_pipeline/reports/MULTIBRAND_10DAY_OPERATIONAL_FORECAST_COMBINED.xlsx`
+3. Idempotent persistence of 1,433 SKU records into MySQL table `operational_forecast_rop`.
+4. Automated post-import SQL assertion verification.
 
 ---
 
-## 🔒 5. Security & Governance
+## 🎯 Core Business Logic & Architectural Principles
 
-1. **No External Network Dependencies**: Operates 100% offline using a local SQLite database (`data/rimmel_clean.db`).
-2. **Zero Credentials Committed**: No API keys, cloud tokens, passwords, or personal credentials exist in the codebase.
-3. **Model Cryptographic Checksum**: The binary `models/production_lgbm_model.pkl` is verified via SHA-256 (`821ba6acbea6f2a7cc81527810411389a64034c2f0c93a9636fab4d7f4605508`) during automated tests.
-4. **Read-Only Dashboard**: The Streamlit user interface is strictly decoupled from the database and model weights, eliminating the risk of accidental model mutation or database corruption.
+### 1. Central Shared Warehouse Constraint
+Physical inventory is held in **ONE single central warehouse pool per SKU** that fulfills orders across Amazon, eBay, Website, and Wholesale.
+> **Rule**: Never sum inventory across platforms. `current_stock` is a SKU-level attribute.
+
+### 2. Additive Channel Law
+Multi-platform sales are forecasted individually and aggregate cleanly to the SKU total:
+$$\text{Amazon Predicted} + \text{eBay Predicted} + \text{Website Predicted} + \text{Other Predicted} = \text{10-Day Total Forecast}$$
+
+### 3. Strict Validation Temporal Isolation
+Features are calculated strictly using data up to the forecast origin date $t < T$. No actual sales data from the forecast window leaks into lag or rolling windows.
+
+### 4. Reorder Point (ROP) Replenishment Invariant
+Replenishment calculations enforce:
+$$\text{Lead Time Demand (LTD)} = \text{Forecasted 10-day demand}$$
+$$\text{Target Stock} = \text{Lead Time Demand} + \text{Minimum Stock Level (MSL} \ge 6\text{)}$$
+$$\text{Replenishment Quantity} = \max(0, \text{Target Stock} - \text{Current Stock})$$
+$$\text{Projected Stock Buffer} = \text{Current Stock} + \text{Replenishment Quantity} - \text{LTD} \ge 6.0$$
 
 ---
 
-## 👥 Contributors & Contact
+## 📊 Canonical Database Architecture
 
-- **Lead ML Engineer**: Production Engineering Team
-- **Project**: Rimmel Demand Forecasting & Multi-Platform Inventory Planning
-- **Certified Release**: Version 1.0.0 (Exp6 Architecture) — September 2026
+The runtime database `multibrand_forecasting_dev` uses:
+- **Input Table**: `normalized_sales` (134,901 rows) — Unified, normalized historical daily sales across all 7 brands.
+- **Canonical Output Table**: `operational_forecast_rop` (1,433 rows) — Single authoritative table holding 21 business columns per SKU.
+- All redundant legacy output tables (`forecast_results`, `report_forecast_inventory`, `report_rop`, etc.) have been permanently retired.
+
+---
+
+## 🔒 Confidentiality & Secret Hygiene
+
+- All credentials, API keys, and database passwords are kept strictly local in `.env`.
+- Database dumps (`database_backups/`), raw order files (`data/*.csv`, `data/*.xlsx`), and scratchpad files are excluded via `.gitignore`.
+- This repository is ready for external QA review on the `main` branch.
